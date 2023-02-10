@@ -1,0 +1,5 @@
+/*.js
+/*.cjs
+node_modules
+dist
+vite.config.ts
