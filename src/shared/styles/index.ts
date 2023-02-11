@@ -14,6 +14,18 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
+
+    background-color: ${props => props.theme['background']};
+    color: ${props => props.theme['text']};
+  }
+
+  h1, h2 {
+    color: ${props => props.theme['title']};
+  }
+
+  strong {
+    font-weight: 700;
   }
 `;
