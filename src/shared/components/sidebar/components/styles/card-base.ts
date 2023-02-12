@@ -7,8 +7,6 @@ export const cardBase = styled.div`
   flex-direction: column;
   gap: 1.875rem;
 
-  /* border: solid 1px transparent; */
-  /* box-shadow: 0px 0px 30px 0px ${props => props.theme['secondary01']}; */
   border: solid 1px ${props => props.theme['secondary01']};
   border-radius: 6px;
   background-color: ${props => props.theme['card']};
