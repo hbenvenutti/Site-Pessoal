@@ -8,5 +8,5 @@ trailingComma: "none"
 bracketSpacing: true
 bracketSameLine: false
 endOfLine: "lf"
-singleAttributePerLine: false
+singleAttributePerLine: true
 jsxSingleQuote: false
