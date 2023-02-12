@@ -12,5 +12,8 @@ export const defaultTheme = {
   secondary01: '#1d4ed8',
   secondary02: '#3b82f6',
 
-  tertiary01: '#57FFDC'
+  tertiary01: '#57FFDC',
+
+  // ignite_node: '#72B182'
+  ignite_node: '#375A1D'
 };

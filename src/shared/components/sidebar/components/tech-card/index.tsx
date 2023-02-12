@@ -1,4 +1,13 @@
-import { FaCss3, FaDocker, FaHtml5, FaLinux, FaNodeJs, FaReact, FaUbuntu } from 'react-icons/fa';
+import {
+  FaCss3,
+  FaDocker,
+  FaGit,
+  FaHtml5,
+  FaLinux,
+  FaNodeJs,
+  FaReact,
+  FaUbuntu
+} from 'react-icons/fa';
 import {
   SiDeno,
   SiJavascript,
@@ -37,6 +46,7 @@ export const TechCard = (): ReactElement => (
       <FaCss3 title="CSS 3" />
       <SiDeno title="Deno" />
       <SiNextdotjs title="Next.JS" />
+      <FaGit title="Git" />
     </div>
   </TechCardWrapper>
 );

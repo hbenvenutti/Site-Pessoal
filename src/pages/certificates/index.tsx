@@ -1,56 +1,23 @@
 // import Tilt from 'react-vanilla-tilt';
-import Tilt from 'react-parallax-tilt';
-import { useTheme } from 'styled-components';
-
-import node from '../../assets/certificates/node.png';
-import efset from '../../assets/certificates/efset.png';
+import { certificates } from '../../shared/providers/certificates';
 
 import { CertificatesPageWrapper } from './styles';
+import { CertificateElement } from './components/certificate';
 
 import type { ReactElement } from 'react';
 
 // * ------------------------------------------------------------------------------------------ * //
 
 export const CertificatesPage = (): ReactElement => {
-  const { secondary02 } = useTheme();
-
+  // *** --- TSX ---------------------------------------------------------------------------- *** //
   return (
     <CertificatesPageWrapper>
-      <h1>Certificados</h1>
-
-      <div className="certificate">
-        <h2>Rocketseat</h2>
-        <Tilt
-          glareEnable
-          glareColor={secondary02}
-          glarePosition="all"
-          tiltMaxAngleX={5}
-          tiltMaxAngleY={5}
-          style={{ width: '31.25rem' }}
-        >
-          <img
-            src={node}
-            alt="Certificado: Rocketseat Ignite Node.js"
-          />
-        </Tilt>
-      </div>
-
-      <div className="certificate">
-        <h2>EF Set</h2>
-        <Tilt
-          glareEnable
-          glareColor={secondary02}
-          glarePosition="all"
-          tiltMaxAngleX={5}
-          tiltMaxAngleY={5}
-          style={{ width: '31.25rem' }}
-        >
-          <img
-            src={efset}
-            alt="Certificado: Rocketseat Ignite Node.js"
-          />
-        </Tilt>
-      </div>
+      {certificates.map(certificate => (
+        <CertificateElement
+          key={certificate.name}
+          certificate={certificate}
+        />
+      ))}
     </CertificatesPageWrapper>
   );
 };
