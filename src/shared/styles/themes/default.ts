@@ -4,6 +4,13 @@ export const defaultTheme = {
 
   title: '#FFF',
   text: '#A2A2A2',
+  strong: '#D2D2D2',
 
-  primary01: '#EC4899'
+  primary01: '#EC4899',
+  primary02: '#f472b6',
+
+  secondary01: '#1d4ed8',
+  secondary02: '#3b82f6',
+
+  tertiary01: '#57FFDC'
 };
