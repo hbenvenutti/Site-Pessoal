@@ -18,6 +18,7 @@ export const LinksCard = (): ReactElement => (
         href="mailto:huambenvenutti@protonmail.com"
         target="_blank"
         rel="noopener noreferrer"
+        title="E-mail"
       >
         <HiOutlineMail />
         huambenvenutti@protonmail.com
@@ -27,6 +28,7 @@ export const LinksCard = (): ReactElement => (
         href="https://github.com/hbenvenutti"
         target="_blank"
         rel="noopener noreferrer"
+        title="Github"
       >
         <BsGithub />
         @hbenvenutti
@@ -36,6 +38,7 @@ export const LinksCard = (): ReactElement => (
         href="https://linkedin.com/in/huam-benvenutti"
         target="_blank"
         rel="noopener noreferrer"
+        title="Linkedin"
       >
         <FaLinkedinIn /> @huam-benvenutti
       </a>
@@ -44,6 +47,7 @@ export const LinksCard = (): ReactElement => (
         href="https://instagram.com/hbenvenutti.dev/"
         target="_blank"
         rel="noopener noreferrer"
+        title="Instagram"
       >
         <FaInstagram /> @hbenvenutti.dev
       </a>
@@ -52,6 +56,7 @@ export const LinksCard = (): ReactElement => (
         href="https://www.hackerrank.com/hbenvenutti"
         target="_blank"
         rel="noopener noreferrer"
+        title="Hackerrank"
       >
         <SiHackerrank /> @hbenvenutti
       </a>
@@ -60,6 +65,7 @@ export const LinksCard = (): ReactElement => (
         href="https://www.youtube.com/@hbenvenutti"
         target="_blank"
         rel="noopener noreferrer"
+        title="Youtube"
       >
         <FaYoutube /> @hbenvenutti
       </a>
@@ -67,6 +73,7 @@ export const LinksCard = (): ReactElement => (
         href="https://wa.me/5551995151506"
         target="_blank"
         rel="noopener noreferrer"
+        title="WhatsApp"
       >
         <FaWhatsapp /> +55 (51) 99515-1506
       </a>

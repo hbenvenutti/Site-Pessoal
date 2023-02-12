@@ -18,11 +18,19 @@ export const LinksCardWrapper = styled(cardBase)`
   a:hover {
     color: ${props => props.theme['secondary02']};
     transition: color 0.2s;
+
+    svg {
+      color: ${props => props.theme['secondary01']};
+
+      transition: color 0.2s;
+    }
   }
 
   svg {
     width: 2rem;
     height: auto;
     color: ${props => props.theme['secondary02']};
+
+    transition: color 0.2s;
   }
 `;
