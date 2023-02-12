@@ -1,3 +1,5 @@
+import { CertificateSpanColor } from '../../@types/enums/certificates.enum';
+
 import type { Certificates } from '../../@types/certificates';
 
 const baseImgUrl = './src/assets/certificates/';
@@ -11,7 +13,8 @@ export const certificates: Certificates = [
     result: '10/10',
     date: new Date('07/09/2022'),
     validationLink:
-      'https://app.rocketseat.com.br/certificates/1dd4a0fe-9cab-4588-833d-ea5ef79188b2'
+      'https://app.rocketseat.com.br/certificates/1dd4a0fe-9cab-4588-833d-ea5ef79188b2',
+    spanColor: CertificateSpanColor.NODE
   },
   {
     institution: 'EF Set',
@@ -20,7 +23,8 @@ export const certificates: Certificates = [
     name: 'Certificado de Proficiência em Inglês',
     result: 'C2 Proficient',
     date: new Date('05/08/2022'),
-    validationLink: 'https://www.efset.org/cert/HgNU5F'
+    validationLink: 'https://www.efset.org/cert/HgNU5F',
+    spanColor: CertificateSpanColor.EF_SET
   },
   {
     institution: 'Cisco',
@@ -29,6 +33,7 @@ export const certificates: Certificates = [
     name: 'CCNA Routing and Switching: Introduction to Networks',
     result: 'Concluído',
     date: new Date('11/02/2019'),
-    validationLink: '#'
+    validationLink: '#',
+    spanColor: CertificateSpanColor.CISCO
   }
 ];

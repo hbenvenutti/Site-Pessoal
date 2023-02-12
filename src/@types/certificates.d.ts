@@ -1,3 +1,7 @@
+import type { CertificateSpanColor } from './enums/certificates.enum';
+
+// * ------------------------------------------------------------------------------------------ * //
+
 interface Certificate {
   date: Date;
   institution: string;
@@ -6,10 +10,11 @@ interface Certificate {
   name: string;
   result: string;
   validationLink: string;
+  spanColor: CertificateSpanColor;
 }
 
 interface CertificateElementProps {
   certificate: Certificate;
 }
 
-export type Certificates = Certificate[];
+type Certificates = Certificate[];

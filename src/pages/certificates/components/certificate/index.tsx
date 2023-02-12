@@ -15,11 +15,11 @@ export const CertificateElement = ({ certificate }: CertificateElementProps): Re
   const { secondary02 } = useTheme();
 
   // *** --- Vars --------------------------------------------------------------------------- *** //
-  const { institution, name, image, validationLink, date, result } = certificate;
+  const { institution, name, image, validationLink, date, result, spanColor } = certificate;
 
   // *** --- TSX ---------------------------------------------------------------------------- *** //
   return (
-    <CertificateWrapper>
+    <CertificateWrapper spanColor={spanColor}>
       <h2>{institution}</h2>
 
       <div className="certificate-data">

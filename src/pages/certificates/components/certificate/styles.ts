@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 
-export const CertificateWrapper = styled.div`
+import type { CertificateSpanColor } from '../../../../@types/enums/certificates.enum';
+
+interface CertificateWrapperProps {
+  spanColor: CertificateSpanColor;
+}
+
+export const CertificateWrapper = styled.div<CertificateWrapperProps>`
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -20,7 +26,7 @@ export const CertificateWrapper = styled.div`
 
     border-radius: 100%;
 
-    background-color: ${props => props.theme['ignite_node']};
+    background-color: ${props => props.theme[props.spanColor]};
   }
 
   svg {

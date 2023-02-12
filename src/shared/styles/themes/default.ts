@@ -14,6 +14,7 @@ export const defaultTheme = {
 
   tertiary01: '#57FFDC',
 
-  // ignite_node: '#72B182'
-  ignite_node: '#375A1D'
+  node: '#375A1D',
+  cisco: '#4679C8',
+  efset: '#605FEA'
 };
