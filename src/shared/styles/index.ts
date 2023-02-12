@@ -13,6 +13,11 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
   body {
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
