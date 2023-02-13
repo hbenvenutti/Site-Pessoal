@@ -5,7 +5,7 @@ import styled from 'styled-components';
 export const cardBase = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1.875rem;
+  gap: 1.2rem;
 
   border: solid 1px ${props => props.theme['secondary01']};
   border-radius: 6px;
