@@ -39,6 +39,7 @@ export const LanguageSelector = (): ReactElement => {
         <option value={Languages.PT_BR}>Português</option>
         <option value={Languages.EN}>English</option>
         <option value={Languages.ITA}>Italiano</option>
+        <option value={Languages.DEU}>Deutsch</option>
       </select>
     </LanguageSelectorWrapper>
   );
