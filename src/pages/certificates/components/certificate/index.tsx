@@ -29,7 +29,7 @@ export const CertificateElement = ({ certificate }: CertificateElementProps): Re
           glarePosition="all"
           tiltMaxAngleX={5}
           tiltMaxAngleY={5}
-          style={{ width: '31.25rem' }}
+          style={{ display: 'flex' }}
         >
           <img
             src={image}

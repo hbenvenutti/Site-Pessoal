@@ -33,13 +33,19 @@ export const HeaderWrapper = styled.header`
     border-bottom: 2px solid ${props => props.theme['secondary02']};
   }
 
-  > div {
+  div.nav-links {
     display: flex;
     gap: 0.5rem;
     align-items: center;
   }
 
-  img {
+  div.logo-wrapper {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  img.logo {
     width: 5rem;
     height: auto;
   }
