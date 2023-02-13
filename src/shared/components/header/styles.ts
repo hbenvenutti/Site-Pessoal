@@ -25,6 +25,7 @@ export const HeaderWrapper = styled.header`
 
   a {
     padding: 0.5rem;
+    border-top: 2px solid transparent;
     border-bottom: 2px solid transparent;
   }
 
@@ -48,5 +49,14 @@ export const HeaderWrapper = styled.header`
   img.logo {
     width: 5rem;
     height: auto;
+  }
+
+  @media (max-width: 1450px) {
+    padding: 2rem;
+
+    div.nav-links {
+      justify-content: space-around;
+      gap: 0;
+    }
   }
 `;

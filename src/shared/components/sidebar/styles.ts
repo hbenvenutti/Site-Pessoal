@@ -10,4 +10,9 @@ export const SidebarWrapper = styled.aside`
   flex-direction: column;
   width: 20rem;
   gap: 1.875rem;
+
+  @media (max-width: 1450px) {
+    margin-left: calc(-20rem - 2.5rem);
+    /* width - wrapper padding */
+  }
 `;

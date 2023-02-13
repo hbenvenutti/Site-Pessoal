@@ -54,4 +54,11 @@ export const CertificateWrapper = styled.div<CertificateWrapperProps>`
     gap: 0.5rem;
     align-items: center;
   }
+
+  @media (max-width: 1450px) {
+    div.certificate-data {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 `;

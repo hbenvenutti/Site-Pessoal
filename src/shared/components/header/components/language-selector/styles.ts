@@ -19,5 +19,6 @@ export const LanguageSelectorWrapper = styled.div`
     border: 1px solid transparent;
     color: ${props => props.theme['title']};
     background-color: ${props => props.theme['background']};
+    appearance: none;
   }
 `;
