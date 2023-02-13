@@ -17,6 +17,7 @@ export const cardBase = styled.div`
 
   &:hover {
     box-shadow: 0px 0px 30px 5px ${props => props.theme['secondary01']};
+    outline: solid 1px ${props => props.theme['secondary01']};
 
     transition: box-shadow 0.1s;
 

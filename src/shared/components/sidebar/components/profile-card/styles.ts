@@ -34,6 +34,7 @@ export const ProfileCardWrapper = styled(cardBase)`
   &:hover {
     img {
       box-shadow: 0px 0px 30px 0px ${props => props.theme['secondary02']};
+      outline: solid 1px ${props => props.theme['secondary02']};
     }
 
     transition: box-shadow 0.1s;

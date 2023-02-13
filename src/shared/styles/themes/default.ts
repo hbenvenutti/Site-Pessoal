@@ -16,5 +16,6 @@ export const defaultTheme = {
 
   node: '#375A1D',
   cisco: '#4679C8',
-  efset: '#605FEA'
+  efset: '#605FEA',
+  sololearn: '#F35843'
 };
