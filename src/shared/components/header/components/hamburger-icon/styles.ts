@@ -3,6 +3,8 @@ import styled from 'styled-components';
 // * ------------------------------------------------------------------------------------------ * //
 
 export const HamburgerIconWrapper = styled.div`
+  display: none;
+
   input {
     display: none;
     visibility: hidden;

@@ -21,9 +21,15 @@ export const MobileMenuProvider = ({ children }: MobileMenuContextProps): ReactE
     setMobileMenu(state => !state);
   };
 
+  // -------------------------------------------------------------------------------------------- //
+
+  const closeMobileMenu = (): void => {
+    setMobileMenu(false);
+  };
+
   // *** --- TSX ---------------------------------------------------------------------------- *** //
   return (
-    <MobileMenuContext.Provider value={{ isMobileMenuOpen, changeMenuState }}>
+    <MobileMenuContext.Provider value={{ isMobileMenuOpen, changeMenuState, closeMobileMenu }}>
       {children}
     </MobileMenuContext.Provider>
   );
