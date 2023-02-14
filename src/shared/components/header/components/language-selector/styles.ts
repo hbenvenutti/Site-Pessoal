@@ -10,7 +10,7 @@ export const LanguageSelectorWrapper = styled.div`
 
   img.flag {
     width: 2rem;
-    height: 1rem;
+    height: 1.3rem;
     padding: 0;
   }
 
