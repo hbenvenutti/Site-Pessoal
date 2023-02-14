@@ -7,7 +7,9 @@ export const ExperienceElementWrapper = styled.div`
 
   border-bottom: 4px solid ${props => props.theme['secondary02']};
 
-  padding: 0.5rem 0;
+  border-radius: 0 0% 0 16px;
+
+  padding: 2rem 0;
 
   a {
     transition: color 0.2s;
@@ -24,6 +26,7 @@ export const ExperienceElementWrapper = styled.div`
     flex-direction: column;
     gap: 0.75rem;
     text-align: justify;
+    padding-top: 0.3rem;
   }
 
   div.item {
