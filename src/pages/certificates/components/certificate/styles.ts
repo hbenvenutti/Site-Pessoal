@@ -60,5 +60,9 @@ export const CertificateWrapper = styled.div<CertificateWrapperProps>`
       display: flex;
       flex-direction: column;
     }
+
+    img {
+      width: 90%;
+    }
   }
 `;

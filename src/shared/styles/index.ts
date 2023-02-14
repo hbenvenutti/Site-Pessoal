@@ -4,6 +4,7 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   * {
+    font-size: 1rem;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -32,5 +33,11 @@ export const GlobalStyle = createGlobalStyle`
 
   strong {
     font-weight: 700;
+  }
+
+  @media (max-width: 500px) {
+    html {
+      font-size: 87%;
+    }
   }
 `;

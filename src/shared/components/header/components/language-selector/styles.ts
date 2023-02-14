@@ -21,4 +21,8 @@ export const LanguageSelectorWrapper = styled.div`
     background-color: ${props => props.theme['background']};
     appearance: none;
   }
+
+  @media (max-width: 1450px) {
+    display: none;
+  }
 `;

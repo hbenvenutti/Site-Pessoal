@@ -53,8 +53,10 @@ export const HeaderWrapper = styled.header`
 
   @media (max-width: 1450px) {
     padding: 2rem;
+    justify-content: space-between;
 
     div.nav-links {
+      display: none;
       justify-content: space-around;
       gap: 0;
     }

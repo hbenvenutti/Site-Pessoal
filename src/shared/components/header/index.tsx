@@ -4,6 +4,7 @@ import logo from '../../../assets/logo.png';
 
 import { HeaderWrapper } from './styles';
 import { LanguageSelector } from './components/language-selector';
+import { HamburgerIcon } from './components/hamburger-icon';
 
 import type { ReactElement } from 'react';
 
@@ -29,6 +30,8 @@ export const Header = (): ReactElement => {
         <NavLink to="/certificates">Certificados</NavLink>
       </div>
       <LanguageSelector />
+
+      <HamburgerIcon />
     </HeaderWrapper>
   );
 };
