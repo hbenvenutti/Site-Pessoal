@@ -34,7 +34,6 @@ export const CertificateElement = ({ certificate }: CertificateElementProps): Re
 
   // -------------------------------------------------------------------------------------------- //
   const handleModalClosure = (): void => {
-    console.log('close modal');
     setModalOpenness(false);
   };
 
@@ -55,7 +54,7 @@ export const CertificateElement = ({ certificate }: CertificateElementProps): Re
         >
           <img
             src={image}
-            alt="Certificado: Rocketseat Ignite Node.js"
+            alt={`Certificado: ${name}`}
             onClick={handleModalOpening}
           />
         </Tilt>
@@ -106,6 +105,7 @@ export const CertificateElement = ({ certificate }: CertificateElementProps): Re
           </a>
         </div>
       </div>
+
       <ImageModal
         isOpen={isModalOpen}
         source={modalImage}
