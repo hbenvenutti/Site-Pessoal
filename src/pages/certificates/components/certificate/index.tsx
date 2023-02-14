@@ -2,10 +2,13 @@ import Tilt from 'react-parallax-tilt';
 import { useTheme } from 'styled-components';
 import { FaCheckDouble, FaGraduationCap } from 'react-icons/fa';
 import { BsCalendarDate, BsPatchCheck } from 'react-icons/bs';
+import { useState } from 'react';
+
+import { ImageModal } from '../image-modal';
 
 import { CertificateWrapper } from './styles';
 
-import type { ReactElement } from 'react';
+import type { ReactElement, MouseEvent } from 'react';
 import type { CertificateElementProps } from '../../../../@types/certificates';
 
 // * ------------------------------------------------------------------------------------------ * //
@@ -14,8 +17,26 @@ export const CertificateElement = ({ certificate }: CertificateElementProps): Re
   // *** --- Contexts ----------------------------------------------------------------------- *** //
   const theme = useTheme();
 
+  // *** --- States ------------------------------------------------------------------------- *** //
+  const [isModalOpen, setModalOpenness] = useState(false);
+  const [modalImage, setModalImage] = useState('');
+
   // *** --- Vars --------------------------------------------------------------------------- *** //
   const { institution, name, image, validationLink, date, result, spanColor } = certificate;
+
+  // *** --- Functions ---------------------------------------------------------------------- *** //
+  const handleModalOpening = (event: MouseEvent<HTMLImageElement>): void => {
+    const source = event.currentTarget.src;
+
+    setModalImage(source);
+    setModalOpenness(true);
+  };
+
+  // -------------------------------------------------------------------------------------------- //
+  const handleModalClosure = (): void => {
+    console.log('close modal');
+    setModalOpenness(false);
+  };
 
   // *** --- TSX ---------------------------------------------------------------------------- *** //
   return (
@@ -35,6 +56,7 @@ export const CertificateElement = ({ certificate }: CertificateElementProps): Re
           <img
             src={image}
             alt="Certificado: Rocketseat Ignite Node.js"
+            onClick={handleModalOpening}
           />
         </Tilt>
 
@@ -84,6 +106,11 @@ export const CertificateElement = ({ certificate }: CertificateElementProps): Re
           </a>
         </div>
       </div>
+      <ImageModal
+        isOpen={isModalOpen}
+        source={modalImage}
+        closeModal={handleModalClosure}
+      />
     </CertificateWrapper>
   );
 };
