@@ -22,6 +22,20 @@ export const LanguageSelectorWrapper = styled.div`
     appearance: none;
   }
 
+  svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    color: ${props => props.theme['secondary02']};
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    svg {
+      color: ${props => props.theme['secondary01']};
+      transition: all 0.2s;
+    }
+  }
+
   @media (max-width: 1450px) {
     display: none;
   }
