@@ -4,6 +4,7 @@ import { DefaultLayout } from '../layouts/default-layout';
 import { HomePage } from '../../pages/home';
 import { CertificatesPage } from '../../pages/certificates';
 import { ExperiencePage } from '../../pages/experience';
+import { EducationPage } from '../../pages/education';
 
 import type { ReactElement } from 'react';
 
@@ -28,6 +29,11 @@ export const Router = (): ReactElement => (
       <Route
         path="/experience"
         element={<ExperiencePage />}
+      />
+
+      <Route
+        path="/education"
+        element={<EducationPage />}
       />
     </Route>
   </Routes>

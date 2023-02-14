@@ -3,8 +3,8 @@ export const defaultTheme = {
   card: '#262626',
 
   title: '#FFF',
-  text: '#A2A2A2',
-  strong: '#D2D2D2',
+  text: '#CFCFCF',
+  strong: '#DFDFDF',
 
   primary01: '#EC4899',
   primary02: '#f472b6',
@@ -19,5 +19,6 @@ export const defaultTheme = {
   efset: '#605FEA',
   sololearn: '#F35843',
 
-  experience_svg: '#FFF'
+  experience_svg: '#FFF',
+  education_svg: '#FFF'
 };

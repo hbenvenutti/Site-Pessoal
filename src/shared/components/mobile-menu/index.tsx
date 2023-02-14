@@ -13,7 +13,7 @@ export const MobileMenu = (): ReactElement => {
       <MobileLanguageSelector />
       <NavLink to="/">Sobre</NavLink>
       <NavLink to="/">Projetos</NavLink>
-      <NavLink to="/">Educação</NavLink>
+      <NavLink to="/education">Educação</NavLink>
       <NavLink to="/experience">Experiência</NavLink>
       <NavLink to="/certificates">Certificados</NavLink>
     </MobileMenuWrapper>
