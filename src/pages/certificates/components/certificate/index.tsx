@@ -24,12 +24,13 @@ export const CertificateElement = ({ certificate }: CertificateElementProps): Re
 
       <div className="certificate-data">
         <Tilt
+          className="tilt"
           glareEnable
           glareColor={secondary02}
           glarePosition="all"
           tiltMaxAngleX={5}
           tiltMaxAngleY={5}
-          style={{ display: 'flex', maxWidth: '31.25rem' }}
+          style={{ display: 'flex' }}
         >
           <img
             src={image}

@@ -61,8 +61,12 @@ export const CertificateWrapper = styled.div<CertificateWrapperProps>`
       flex-direction: column;
     }
 
-    img {
+    .tilt {
       width: 90%;
+    }
+
+    img {
+      width: 100%;
     }
   }
 `;
