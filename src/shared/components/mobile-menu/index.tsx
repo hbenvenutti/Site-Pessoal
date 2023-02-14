@@ -1,8 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
-import { LanguageSelector } from '../header/components/language-selector';
-
 import { MobileMenuWrapper } from './styles';
+import { MobileLanguageSelector } from './mobile-language-selector';
 
 import type { ReactElement } from 'react';
 
@@ -11,7 +10,7 @@ import type { ReactElement } from 'react';
 export const MobileMenu = (): ReactElement => {
   return (
     <MobileMenuWrapper>
-      <LanguageSelector />
+      <MobileLanguageSelector />
       <NavLink to="/">Sobre</NavLink>
       <NavLink to="/">Projetos</NavLink>
       <NavLink to="/">Educação</NavLink>
