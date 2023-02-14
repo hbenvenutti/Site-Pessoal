@@ -21,8 +21,8 @@ export const CertificateWrapper = styled.div<CertificateWrapperProps>`
     align-items: center;
     justify-content: center;
 
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
 
     border-radius: 100%;
 
@@ -31,8 +31,8 @@ export const CertificateWrapper = styled.div<CertificateWrapperProps>`
 
   svg {
     color: white;
-    width: 22px;
-    height: 22px;
+    width: 1.375rem;
+    height: 1.375rem;
   }
 
   .certificate-data {
@@ -46,6 +46,10 @@ export const CertificateWrapper = styled.div<CertificateWrapperProps>`
     flex-direction: column;
     gap: 1.75rem;
     padding: 1rem;
+
+    p {
+      flex: 1;
+    }
   }
 
   .data-item {
@@ -67,6 +71,11 @@ export const CertificateWrapper = styled.div<CertificateWrapperProps>`
 
     img {
       width: 100%;
+    }
+
+    div.data-list {
+      padding: 0.5rem;
+      overflow: scroll;
     }
   }
 `;
