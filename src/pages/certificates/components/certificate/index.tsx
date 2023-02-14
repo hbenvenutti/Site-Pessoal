@@ -12,7 +12,7 @@ import type { CertificateElementProps } from '../../../../@types/certificates';
 
 export const CertificateElement = ({ certificate }: CertificateElementProps): ReactElement => {
   // *** --- Contexts ----------------------------------------------------------------------- *** //
-  const { secondary02 } = useTheme();
+  const theme = useTheme();
 
   // *** --- Vars --------------------------------------------------------------------------- *** //
   const { institution, name, image, validationLink, date, result, spanColor } = certificate;
@@ -26,7 +26,7 @@ export const CertificateElement = ({ certificate }: CertificateElementProps): Re
         <Tilt
           className="tilt"
           glareEnable
-          glareColor={secondary02}
+          glareColor={theme[spanColor]}
           glarePosition="all"
           tiltMaxAngleX={5}
           tiltMaxAngleY={5}
