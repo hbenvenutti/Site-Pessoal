@@ -24,6 +24,12 @@ export const MobileMenuProvider = ({ children }: MobileMenuContextProps): ReactE
   // -------------------------------------------------------------------------------------------- //
 
   const closeMobileMenu = (): void => {
+    const checkbox = document.getElementById('hamburger-checkbox') as HTMLInputElement;
+
+    if (!checkbox) return;
+
+    checkbox.checked = false;
+
     setMobileMenu(false);
   };
 

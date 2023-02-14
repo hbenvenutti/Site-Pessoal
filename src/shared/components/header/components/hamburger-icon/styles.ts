@@ -31,7 +31,7 @@ export const HamburgerIconWrapper = styled.div`
     border-radius: 2rem;
     width: 100%;
     height: 5px;
-    transition: all 0.2s;
+    transition: all 0.4s;
   }
 
   span.hamburger-first-line {
@@ -48,18 +48,18 @@ export const HamburgerIconWrapper = styled.div`
 
   #hamburger-checkbox:checked + label span.hamburger-first-line {
     transform: rotate(-45deg);
-    transition: all 0.2s;
+    transition: all 0.4s;
     top: 0.5rem;
   }
 
   #hamburger-checkbox:checked + label span.hamburger-second-line {
     visibility: hidden;
-    transition: all 0.1s;
+    transition: all 0.3s;
   }
 
   #hamburger-checkbox:checked + label span.hamburger-third-line {
     transform: rotate(45deg);
-    transition: all 0.2s;
+    transition: all 0.4s;
     top: 0.5rem;
   }
 

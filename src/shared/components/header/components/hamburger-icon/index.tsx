@@ -14,13 +14,7 @@ export const HamburgerIcon = (): ReactElement => {
 
   // *** --- Functions ---------------------------------------------------------------------- *** //
   const handleIconDisappearance = (): void => {
-    const checkbox = document.getElementById('hamburger-checkbox') as HTMLInputElement;
-
     if (window.innerWidth < 1450) return;
-
-    if (!checkbox) return;
-
-    checkbox.checked = false;
 
     closeMobileMenu();
   };
