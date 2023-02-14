@@ -9,7 +9,7 @@ export const ExperienceElementWrapper = styled.div`
 
   border-radius: 0 0% 0 16px;
 
-  padding: 2rem 0;
+  padding: 2rem 0.5rem;
 
   a {
     transition: color 0.2s;

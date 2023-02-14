@@ -6,6 +6,11 @@ export const EducationElementWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: 100%;
+
+  border-bottom: 4px solid ${props => props.theme['secondary02']};
+  border-radius: 0 0% 0 16px;
+  padding: 2rem 0.5rem;
 
   div {
     display: flex;
@@ -18,9 +23,9 @@ export const EducationElementWrapper = styled.div`
     align-items: center;
     justify-content: center;
 
-    padding: 0.5rem;
-    height: 2.5rem;
-    width: 2.5rem;
+    padding: 0.75rem;
+    height: 3rem;
+    width: 3rem;
 
     border-radius: 100%;
     background-color: ${props => props.theme['secondary02']};
