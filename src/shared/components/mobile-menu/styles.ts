@@ -17,10 +17,13 @@ export const MobileMenuWrapper = styled.div`
     padding: 0.5rem;
     border-top: 2px solid transparent;
     border-bottom: 2px solid transparent;
+    transition: all 0.2s;
   }
 
-  a.active {
+  a.active,
+  a:hover {
     color: ${props => props.theme['strong']};
     border-bottom: 2px solid ${props => props.theme['secondary02']};
+    transition: all 0.1s;
   }
 `;
