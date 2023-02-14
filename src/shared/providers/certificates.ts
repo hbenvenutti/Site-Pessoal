@@ -1,14 +1,18 @@
 import { CertificateSpanColor } from '../../@types/enums/certificates.enum';
+import igniteImg from '../../assets/certificates/node.png';
+import ccnaImg from '../../assets/certificates/ccna.png';
+import efsetImg from '../../assets/certificates/efset.png';
+import sololearnImg from '../../assets/certificates/sololearn.png';
 
 import type { Certificates } from '../../@types/certificates';
 
-const baseImgUrl = './src/assets/certificates/';
+// * ------------------------------------------------------------------------------------------ * //
 
 export const certificates: Certificates = [
   {
     institution: 'Rocketseat',
     institutionSite: 'https://lp.rocketseat.com.br/ignite',
-    image: `${baseImgUrl}node.png`,
+    image: igniteImg,
     name: 'Ignite - Trilha Node',
     result: '10/10',
     date: new Date('09/07/2022'),
@@ -19,7 +23,7 @@ export const certificates: Certificates = [
   {
     institution: 'EF Set',
     institutionSite: 'https://www.efset.org/',
-    image: `${baseImgUrl}efset.png`,
+    image: efsetImg,
     name: 'Certificado de Proficiência em Inglês',
     result: 'C2 Proficient',
     date: new Date('08/05/2022'),
@@ -29,7 +33,7 @@ export const certificates: Certificates = [
   {
     institution: 'Cisco',
     institutionSite: 'https://www.netacad.com/',
-    image: `${baseImgUrl}ccna.png`,
+    image: ccnaImg,
     name: 'CCNA Routing and Switching: Introduction to Networks',
     result: 'Concluído',
     date: new Date('02/11/2019'),
@@ -39,11 +43,10 @@ export const certificates: Certificates = [
   {
     institution: 'Solo Learn',
     institutionSite: 'https://www.sololearn.com/',
-    image: `${baseImgUrl}sololearn.png`,
+    image: sololearnImg,
     name: 'SQL Fundamentals course',
     result: 'Concluído',
     date: new Date('06/27/2019'),
-    // date: new Date('11/02/2019'),
     validationLink: 'https://www.sololearn.com/Certificate/CT-ZLZZZIUD/pdf',
     spanColor: CertificateSpanColor.SOLO_LEARN
   }
