@@ -3,7 +3,12 @@ import type { Experiences } from '../../@types/providers/experience';
 export const experiences: Experiences = [
   {
     title: 'Projeto de extensão - Curso de Informática Básica',
-    companies: [{ name: 'Instituto Federal - Campus Viamão', url: 'https://ifrs.edu.br/viamao/' }],
+    companies: [
+      {
+        name: 'Instituto Federal do Rio Grande do Sul - Campus Viamão',
+        url: 'https://ifrs.edu.br/viamao/'
+      }
+    ],
     year: 2022,
     description: [
       'Trabalho voluntário de assistente de professor. Auxiliava e tirava as dúvidas dos alunos. O curso ensinava conceitos básicos como diretórios, nuvem e ferramentas de escritório.'
