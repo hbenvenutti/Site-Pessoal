@@ -16,19 +16,21 @@ export const EducationElement = (): ReactElement => {
         <span>
           <FaGraduationCap />
         </span>
-        <strong>Tecnólogo em Análise e Desenvolvimento de Sistemas</strong>
+        <p>
+          <strong>Tecnólogo em Análise e Desenvolvimento de Sistemas</strong>
+        </p>
       </div>
       <div>
         <span>
           <BsCalendarDate />
         </span>
-        07/2022 - Cursando
+        <p>07/2022 - Cursando</p>
       </div>
       <div>
         <span>
           <HiLocationMarker />
         </span>
-        Porto Alegre/RS
+        <p>Porto Alegre/RS</p>
       </div>
     </EducationElementWrapper>
   );

@@ -22,10 +22,12 @@ export const ExperienceElementWrapper = styled.div`
 
   article {
     display: flex;
-    width: 70%;
+    flex: 1;
     flex-direction: column;
     gap: 0.75rem;
     text-align: justify;
+
+    width: 70%;
     padding-top: 0.3rem;
   }
 
@@ -64,13 +66,8 @@ export const ExperienceElementWrapper = styled.div`
 
   /* // *** --- Responsiveness ------------------------------------------------------------- ***  */
   @media (max-width: 700px) {
-    article {
-      width: 100%;
-    }
-
-    div.description {
-      flex-direction: column;
-      align-items: flex-start;
+    a {
+      flex: 1;
     }
   }
 `;

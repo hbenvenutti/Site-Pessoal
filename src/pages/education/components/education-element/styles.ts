@@ -18,6 +18,10 @@ export const EducationElementWrapper = styled.div`
     gap: 0.5rem;
   }
 
+  p {
+    flex: 1;
+  }
+
   span {
     display: flex;
     align-items: center;
