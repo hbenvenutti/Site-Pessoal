@@ -11,6 +11,9 @@ export const MobileMenuWrapper = styled.div`
   width: 100%;
   padding: 2rem;
 
+  animation-name: show-up;
+  animation-duration: 1s;
+
   a {
     font-size: 2rem;
     width: 80%;
@@ -25,5 +28,15 @@ export const MobileMenuWrapper = styled.div`
     color: ${props => props.theme['strong']};
     border-bottom: 2px solid ${props => props.theme['secondary02']};
     transition: all 0.1s;
+  }
+
+  @keyframes show-up {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
   }
 `;
