@@ -4,7 +4,7 @@ import ccnaImg from '../../assets/certificates/ccna.png';
 import efsetImg from '../../assets/certificates/efset.png';
 import sololearnImg from '../../assets/certificates/sololearn.png';
 
-import type { Certificates } from '../../@types/certificates';
+import type { Certificates } from '../../@types/providers/certificates';
 
 // * ------------------------------------------------------------------------------------------ * //
 
