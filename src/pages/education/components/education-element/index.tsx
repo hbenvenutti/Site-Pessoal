@@ -4,34 +4,51 @@ import { HiLocationMarker } from 'react-icons/hi';
 
 import { EducationElementWrapper } from './styles';
 
+import type { EducationElementProps } from '../../../../@types/providers/education';
 import type { ReactElement } from 'react';
 
-// * ------------------------------------------------------------------------------------------ * //
+// * ---------------------------------------------------------------------- * //
 
-export const EducationElement = (): ReactElement => {
+function EducationElement({ education }: EducationElementProps): ReactElement {
+  // *** --- Vars ------------------------------------------------------- *** //
+  const { institution, course, finishDate, location, startDate } = education;
+
+  // *** --- TSX -------------------------------------------------------- *** //
   return (
     <EducationElementWrapper>
-      <h2>Instituto Federal do Rio Grande do Sul - Campus Restinga</h2>
+      <h2>{institution}</h2>
       <div>
         <span>
           <FaGraduationCap />
         </span>
         <p>
-          <strong>Tecnólogo em Análise e Desenvolvimento de Sistemas</strong>
+          <strong>{course}</strong>
         </p>
       </div>
       <div>
         <span>
           <BsCalendarDate />
         </span>
-        <p>07/2022 - Cursando</p>
+        <p>
+          {Intl.DateTimeFormat('pt-br', { month: '2-digit', year: 'numeric' }).format(startDate)}
+
+          {' - '}
+
+          {typeof finishDate !== 'string'
+            ? Intl.DateTimeFormat('pt-br', { month: '2-digit', year: 'numeric' }).format(finishDate)
+            : finishDate}
+        </p>
       </div>
       <div>
         <span>
           <HiLocationMarker />
         </span>
-        <p>Porto Alegre/RS</p>
+        <p>{location}</p>
       </div>
     </EducationElementWrapper>
   );
-};
+}
+
+// * ---------------------------------------------------------------------- * //
+
+export { EducationElement };
