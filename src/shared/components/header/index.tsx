@@ -24,7 +24,7 @@ export const Header = (): ReactElement => {
       </div>
       <div className="nav-links">
         <NavLink to="/">Sobre</NavLink>
-        <NavLink to="/">Projetos</NavLink>
+        <NavLink to="/projects">Projetos</NavLink>
         <NavLink to="/education">Educação</NavLink>
         <NavLink to="/experience">Experiência</NavLink>
         <NavLink to="/certificates">Certificados</NavLink>

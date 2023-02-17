@@ -5,10 +5,11 @@ import { HomePage } from '../../pages/home';
 import { CertificatesPage } from '../../pages/certificates';
 import { ExperiencePage } from '../../pages/experience';
 import { EducationPage } from '../../pages/education';
+import { ProjectsPage } from '../../pages/projects';
 
 import type { ReactElement } from 'react';
 
-// * ------------------------------------------------------------------------------------------ * //
+// * ---------------------------------------------------------------------- * //
 
 export const Router = (): ReactElement => (
   <Routes>
@@ -34,6 +35,11 @@ export const Router = (): ReactElement => (
       <Route
         path="/education"
         element={<EducationPage />}
+      />
+
+      <Route
+        path="/projects"
+        element={<ProjectsPage />}
       />
     </Route>
   </Routes>

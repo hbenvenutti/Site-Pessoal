@@ -25,7 +25,7 @@ export const MobileMenu = (): ReactElement => {
       </NavLink>
       <NavLink
         onClick={closeMobileMenu}
-        to="/"
+        to="/projects"
       >
         Projetos
       </NavLink>
