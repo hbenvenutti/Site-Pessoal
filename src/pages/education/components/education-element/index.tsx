@@ -13,12 +13,16 @@ import type { ReactElement } from 'react';
 
 function EducationElement({ education }: EducationElementProps): ReactElement {
   // *** --- Vars ------------------------------------------------------- *** //
-  const { institution, course, finishDate, location, startDate } = education;
+  const { institution, course, finishDate, location, startDate, image } = education;
 
   // *** --- TSX -------------------------------------------------------- *** //
   return (
     <EducationElementWrapper>
       <h2>{institution}</h2>
+      <img
+        src={image}
+        alt=""
+      />
       <div>
         <span title="Curso.">
           <FaGraduationCap />

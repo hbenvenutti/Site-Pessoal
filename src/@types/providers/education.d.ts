@@ -4,6 +4,7 @@ interface Education {
   startDate: Date;
   finishDate: Date | 'Cursando' | 'Interrompido';
   location: string;
+  image: string;
 }
 
 // -------------------------------------------------------------------------- //
