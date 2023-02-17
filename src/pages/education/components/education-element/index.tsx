@@ -2,6 +2,8 @@ import { BsCalendarDate } from 'react-icons/bs';
 import { FaGraduationCap } from 'react-icons/fa';
 import { HiLocationMarker } from 'react-icons/hi';
 
+import { formatEducationDate } from '../../../../shared/utils/date-formatter';
+
 import { EducationElementWrapper } from './styles';
 
 import type { EducationElementProps } from '../../../../@types/providers/education';
@@ -30,13 +32,16 @@ function EducationElement({ education }: EducationElementProps): ReactElement {
           <BsCalendarDate />
         </span>
         <p>
-          {Intl.DateTimeFormat('pt-br', { month: '2-digit', year: 'numeric' }).format(startDate)}
+          {formatEducationDate(startDate)}
 
           {' - '}
 
-          {typeof finishDate !== 'string'
-            ? Intl.DateTimeFormat('pt-br', { month: '2-digit', year: 'numeric' }).format(finishDate)
-            : finishDate}
+          {
+            // eslint-disable-next-line prettier/prettier
+            typeof finishDate !== 'string' 
+              ? formatEducationDate(finishDate) 
+              : finishDate
+          }
         </p>
       </div>
       <div>
