@@ -18,7 +18,7 @@ function EducationElement({ education }: EducationElementProps): ReactElement {
     <EducationElementWrapper>
       <h2>{institution}</h2>
       <div>
-        <span>
+        <span title="Curso.">
           <FaGraduationCap />
         </span>
         <p>
@@ -26,7 +26,7 @@ function EducationElement({ education }: EducationElementProps): ReactElement {
         </p>
       </div>
       <div>
-        <span>
+        <span title="Datas de ínicio e término.">
           <BsCalendarDate />
         </span>
         <p>
@@ -40,7 +40,7 @@ function EducationElement({ education }: EducationElementProps): ReactElement {
         </p>
       </div>
       <div>
-        <span>
+        <span title="Cidade e estado">
           <HiLocationMarker />
         </span>
         <p>{location}</p>

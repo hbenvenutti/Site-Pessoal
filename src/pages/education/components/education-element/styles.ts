@@ -26,6 +26,7 @@ export const EducationElementWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: help;
 
     padding: 0.75rem;
     height: 3rem;
