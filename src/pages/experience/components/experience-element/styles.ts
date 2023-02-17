@@ -29,6 +29,7 @@ export const ExperienceElementWrapper = styled.div`
 
     width: 70%;
     padding-top: 0.3rem;
+    padding-right: 2rem;
   }
 
   div.item {
@@ -68,6 +69,10 @@ export const ExperienceElementWrapper = styled.div`
   @media (max-width: 700px) {
     a {
       flex: 1;
+    }
+
+    article {
+      padding-right: 0;
     }
   }
 `;
