@@ -8,5 +8,6 @@ export const Container = styled.div`
 
   @media (max-width: 1450px) {
     flex-direction: column-reverse;
+    align-items: center;
   }
 `;

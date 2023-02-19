@@ -18,7 +18,7 @@ export const ProjectsPageWrapper = styled.main`
     div.content {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      gap: 5rem;
     }
   }
 `;

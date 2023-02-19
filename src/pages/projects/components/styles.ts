@@ -81,6 +81,7 @@ const ProjectElementWrapper = styled.div`
   // *** --- Mobile ----------------------------------------------------- *** //
   @media (max-width: 1450px) {
     height: auto;
+    padding: 0;
 
     article {
       height: auto;
