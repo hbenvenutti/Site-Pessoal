@@ -1,4 +1,4 @@
-import type { CertificateSpanColor } from './enums/certificates.enum';
+import type { CertificateSpanColor } from '../enums/certificates.enum';
 
 // * ------------------------------------------------------------------------------------------ * //
 

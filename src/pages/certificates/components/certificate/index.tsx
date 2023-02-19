@@ -9,7 +9,7 @@ import { ImageModal } from '../image-modal';
 import { CertificateWrapper } from './styles';
 
 import type { ReactElement, MouseEvent } from 'react';
-import type { CertificateElementProps } from '../../../../@types/certificates';
+import type { CertificateElementProps } from '../../../../@types/providers/certificates';
 
 // * ------------------------------------------------------------------------------------------ * //
 
@@ -46,7 +46,7 @@ export const CertificateElement = ({ certificate }: CertificateElementProps): Re
         <Tilt
           className="tilt"
           glareEnable
-          glareColor={theme[spanColor]}
+          glareColor={theme[spanColor as keyof typeof theme]}
           glarePosition="all"
           tiltMaxAngleX={5}
           tiltMaxAngleY={5}
