@@ -11,12 +11,15 @@ function ProjectsPage(): ReactElement {
   return (
     <ProjectsPageWrapper>
       <h1>Projetos</h1>
-      {projects.map(project => (
-        <ProjectElement
-          key={project.name}
-          project={project}
-        />
-      ))}
+
+      <div className="content">
+        {projects.map(project => (
+          <ProjectElement
+            key={project.name}
+            project={project}
+          />
+        ))}
+      </div>
     </ProjectsPageWrapper>
   );
 }

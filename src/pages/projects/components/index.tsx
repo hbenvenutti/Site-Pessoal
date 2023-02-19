@@ -20,21 +20,25 @@ function ProjectElement({ project }: ProjectElementProps): ReactElement {
       />
       <h2>{name}</h2>
       <article>{description}</article>
-      <div>{techs.map(tech => techIcons[tech])}</div>
-      <div>
+
+      <div className="tech-list">{techs.map(tech => techIcons[tech])}</div>
+
+      <div className="links">
         <a
           href={github}
           target="_blank"
           rel="noopener noreferrer"
+          title="Código fonte no Github"
         >
           {techIcons[Techs.GITHUB]}Código Fonte
         </a>
         <a
+          className="see-live-button"
           href={netlify}
           target="_blank"
           rel="noopener noreferrer"
         >
-          {techIcons[Techs.NETLIFY]}Live
+          {techIcons[Techs.NETLIFY]}Veja Rodando
         </a>
       </div>
     </ProjectElementWrapper>

@@ -1,3 +1,4 @@
+import { AiFillAndroid } from 'react-icons/ai';
 import { BsGithub } from 'react-icons/bs';
 import {
   FaCss3,
@@ -35,7 +36,8 @@ export enum Techs {
   TYPESCRIPT = 'typescript',
 
   GITHUB = 'github',
-  NETLIFY = 'netlify'
+  NETLIFY = 'netlify',
+  MOBILE = 'mobile'
 }
 
 // -------------------------------------------------------------------------- //
@@ -45,28 +47,114 @@ const techIcons = {
   netlify: <SiNetlify />,
   git: <FaGit />,
 
-  typescript: <SiTypescript />,
-  javascript: <SiJavascript />,
+  typescript: (
+    <SiTypescript
+      title="Typescript"
+      key="typescript"
+    />
+  ),
+  javascript: (
+    <SiJavascript
+      title="Javascript"
+      key="javascript"
+    />
+  ),
 
-  react: <FaReact />,
-  node: <FaNodeJs />,
-  deno: <SiDeno />,
+  react: (
+    <FaReact
+      title="React"
+      key="react"
+    />
+  ),
+  node: (
+    <FaNodeJs
+      title="Node"
+      key="node"
+    />
+  ),
+  deno: (
+    <SiDeno
+      title="Deno"
+      key="deno"
+    />
+  ),
 
-  next: <SiNextdotjs />,
-  nest: <SiNestjs />,
-  vite: <SiVite />,
+  next: (
+    <SiNextdotjs
+      title="Next.js"
+      key="next"
+    />
+  ),
+  nest: (
+    <SiNestjs
+      title="Nest.js"
+      key="nest"
+    />
+  ),
+  vite: (
+    <SiVite
+      title="Vite"
+      key="vite"
+    />
+  ),
 
-  postgres: <SiPostgresql />,
-  mongo: <SiMongodb />,
-  prisma: <SiPrisma />,
+  postgres: (
+    <SiPostgresql
+      title="PostgreSQL"
+      key="postgres"
+    />
+  ),
+  mongo: (
+    <SiMongodb
+      title="MongoDB"
+      key="mongo"
+    />
+  ),
+  prisma: (
+    <SiPrisma
+      title="Prisma ORM"
+      key="prisma"
+    />
+  ),
 
-  docker: <FaDocker />,
+  docker: (
+    <FaDocker
+      title="Docker"
+      key="docker"
+    />
+  ),
 
-  linux: <FaLinux />,
-  ubuntu: <FaUbuntu />,
+  linux: (
+    <FaLinux
+      title="Linux"
+      key="linux"
+    />
+  ),
+  ubuntu: (
+    <FaUbuntu
+      title="Ubuntu"
+      key="ubuntu"
+    />
+  ),
 
-  html: <FaHtml5 />,
-  css: <FaCss3 />
+  html: (
+    <FaHtml5
+      title="HTML5"
+      key="html"
+    />
+  ),
+  css: (
+    <FaCss3
+      title="CSS3"
+      key="css"
+    />
+  ),
+  mobile: (
+    <AiFillAndroid
+      title="Mobile"
+      key="mobile"
+    />
+  )
 };
 
 // * ---------------------------------------------------------------------- * //

@@ -20,5 +20,9 @@ export const defaultTheme = {
   sololearn: '#F35843',
 
   experience_svg: '#FFF',
-  education_svg: '#FFF'
+  education_svg: '#FFF',
+
+  // *** --- Projects --------------------------------------------------- *** //
+  liveButtonBackground: '#FFF',
+  liveButtonText: '#000'
 };
