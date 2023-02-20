@@ -28,12 +28,14 @@ import {
 export enum Techs {
   REACT = 'react',
   NODE = 'node',
+  NEXT = 'next',
   VITE = 'vite',
   NEST = 'nest',
   POSTGRES = 'postgres',
   MONGO = 'mongo',
   PRISMA = 'prisma',
   TYPESCRIPT = 'typescript',
+  DOCKER = 'docker',
 
   GITHUB = 'github',
   NETLIFY = 'netlify',

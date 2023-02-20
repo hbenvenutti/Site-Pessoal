@@ -49,6 +49,7 @@ const ProjectElementWrapper = styled.div`
     align-items: center;
     max-width: 25rem;
     height: 12.5rem;
+    overflow: hidden;
   }
 
   div.links {

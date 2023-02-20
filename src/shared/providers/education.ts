@@ -1,6 +1,5 @@
-import ifcImage from '../../assets/education/araquari.png';
-import maristaImage from '../../assets/education/marista.jpg';
-import ifrsImage from '../../assets/education/ifrs.png';
+import maristaImage from '../../assets/education/marista.png';
+import ifImage from '../../assets/education/if.png';
 
 import type { EducationList } from '../../@types/providers/education';
 
@@ -13,7 +12,7 @@ export const educationList: EducationList = [
     startDate: new Date(2022, 6),
     finishDate: 'Cursando',
     location: 'Porto Alegre/RS',
-    image: ifrsImage
+    image: ifImage
   },
   {
     institution: 'Instituto Federal Catarinense - Campus Araquari',
@@ -21,7 +20,7 @@ export const educationList: EducationList = [
     startDate: new Date(2019, 1),
     finishDate: 'Interrompido',
     location: 'Araquari/SC',
-    image: ifcImage
+    image: ifImage
   },
   {
     institution: 'Instituto Marista Nossa Senhora das Graças',

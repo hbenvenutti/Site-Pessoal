@@ -18,11 +18,13 @@ function EducationElement({ education }: EducationElementProps): ReactElement {
   // *** --- TSX -------------------------------------------------------- *** //
   return (
     <EducationElementWrapper>
-      <h2>{institution}</h2>
-      <img
-        src={image}
-        alt=""
-      />
+      <div>
+        <img
+          src={image}
+          alt=""
+        />
+        <h2>{institution}</h2>
+      </div>
       <div>
         <span title="Curso.">
           <FaGraduationCap />

@@ -19,12 +19,10 @@ export const EducationElementWrapper = styled.div`
   }
 
   img {
-    border-radius: 50px 8px 50px 8px;
-    border: 2px solid ${props => props.theme['secondary02']};
-
-    height: 20rem;
-    width: 32rem;
-    background-color: white;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+    background-color: ${props => props.theme['education_svg']};
   }
 
   p {
