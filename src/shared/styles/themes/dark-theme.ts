@@ -1,10 +1,10 @@
-export const defaultTheme = {
-  background: '#fff',
-  card: '#DFDFDF',
+export const darkTheme = {
+  background: '#0E0F11',
+  card: '#262626',
 
-  title: '#000',
-  text: '#000',
-  strong: '#000',
+  title: '#FFF',
+  text: '#CFCFCF',
+  strong: '#DFDFDF',
 
   primary01: '#EC4899',
   primary02: '#f472b6',
@@ -21,8 +21,8 @@ export const defaultTheme = {
   education_svg: '#FFF',
 
   // *** --- Projects --------------------------------------------------- *** //
-  liveButtonBackground: '#000',
-  liveButtonText: '#fff',
+  liveButtonBackground: '#FFF',
+  liveButtonText: '#000',
 
   // *** --- Articles --------------------------------------------------- *** //
   selector01: '#FFF',
