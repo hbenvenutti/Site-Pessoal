@@ -24,5 +24,9 @@ export const defaultTheme = {
 
   // *** --- Projects --------------------------------------------------- *** //
   liveButtonBackground: '#FFF',
-  liveButtonText: '#000'
+  liveButtonText: '#000',
+
+  // *** --- Articles --------------------------------------------------- *** //
+  selector01: '#FFF',
+  selector02: '#000'
 };

@@ -6,6 +6,7 @@ import { CertificatesPage } from '../../pages/certificates';
 import { ExperiencePage } from '../../pages/experience';
 import { EducationPage } from '../../pages/education';
 import { ProjectsPage } from '../../pages/projects';
+import { AboutPage } from '../../pages/about';
 
 import type { ReactElement } from 'react';
 
@@ -20,6 +21,11 @@ export const Router = (): ReactElement => (
       <Route
         path="/"
         element={<HomePage />}
+      />
+
+      <Route
+        path="/about"
+        element={<AboutPage />}
       />
 
       <Route

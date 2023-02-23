@@ -21,6 +21,13 @@ export const MobileMenu = (): ReactElement => {
         onClick={closeMobileMenu}
         to="/"
       >
+        Home
+      </NavLink>
+
+      <NavLink
+        onClick={closeMobileMenu}
+        to="/about"
+      >
         Sobre
       </NavLink>
       <NavLink
