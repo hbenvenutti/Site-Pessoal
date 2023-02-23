@@ -20,6 +20,8 @@ export const LanguageSelectorWrapper = styled.div`
     color: ${props => props.theme['title']};
     background-color: ${props => props.theme['background']};
     appearance: none;
+
+    transition: background-color, color 0.5s;
   }
 
   svg {
@@ -34,9 +36,5 @@ export const LanguageSelectorWrapper = styled.div`
       color: ${props => props.theme['secondary01']};
       transition: all 0.2s;
     }
-  }
-
-  @media (max-width: 1450px) {
-    display: none;
   }
 `;

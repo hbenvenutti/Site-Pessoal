@@ -26,5 +26,9 @@ export const defaultTheme = {
 
   // *** --- Articles --------------------------------------------------- *** //
   selector01: '#FFF',
-  selector02: '#000'
+  selector02: '#000',
+
+  // *** --- Theme Icons ------------------------------------------------ *** //
+  sun: 'orange',
+  moon: '#fef08a'
 };

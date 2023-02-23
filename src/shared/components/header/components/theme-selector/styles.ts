@@ -39,11 +39,11 @@ export const ThemeSelectorButtonWrapper = styled.div`
   }
 
   svg.moon {
-    color: yellow;
+    color: ${props => props.theme['moon']};
   }
 
   svg.sun {
-    color: orange;
+    color: ${props => props.theme['sun']};
   }
 
   #theme-selector:checked + label div.selector {

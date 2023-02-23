@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-// * ------------------------------------------------------------------------------------------ * //
+// * ---------------------------------------------------------------------- * //
 
 export const HeaderWrapper = styled.header`
   position: sticky;
@@ -22,6 +22,8 @@ export const HeaderWrapper = styled.header`
   border-bottom: 1px solid ${props => props.theme['secondary02']};
 
   background-color: ${props => props.theme['background']};
+
+  transition: color, background-color 0.5s;
 
   a {
     padding: 0.5rem;
@@ -55,10 +57,19 @@ export const HeaderWrapper = styled.header`
     gap: 1rem;
   }
 
-  img.logo {
-    width: 5rem;
-    height: auto;
+  span.logo {
+    font-size: inherit;
+    color: ${props => props.theme['primary01']};
   }
+
+  strong {
+    font-size: 2rem;
+    font-weight: 700;
+
+    transition: all 0.5s;
+  }
+
+  // *** --- Mobile ----------------------------------------------------- *** //
 
   @media (max-width: 1450px) {
     padding: 2rem;

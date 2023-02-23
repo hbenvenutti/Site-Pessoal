@@ -39,11 +39,11 @@ export const MobileThemeSelectorButtonWrapper = styled.div`
   }
 
   svg.moon {
-    color: yellow;
+    color: ${props => props.theme['moon']};
   }
 
   svg.sun {
-    color: orange;
+    color: ${props => props.theme['sun']};
   }
 
   #mobile-theme-selector:checked + label div.selector {

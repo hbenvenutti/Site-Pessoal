@@ -25,6 +25,8 @@ export const GlobalStyle = createGlobalStyle`
 
     background-color: ${props => props.theme['background']};
     color: ${props => props.theme['text']};
+
+    transition: color, background-color 0.5s;
   }
 
   h1 {
