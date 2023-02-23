@@ -5,7 +5,7 @@ import logo from '../../../assets/logo.png';
 import { HeaderWrapper } from './styles';
 import { LanguageSelector } from './components/language-selector';
 import { HamburgerIcon } from './components/hamburger-icon';
-import { ThemeSelectorButton } from './components/theme-button';
+import { ThemeSelectorButton } from './components/theme-selector';
 
 import type { ReactElement } from 'react';
 
@@ -31,8 +31,10 @@ export const Header = (): ReactElement => {
         <NavLink to="/experience">Experiência</NavLink>
         <NavLink to="/certificates">Certificados</NavLink>
       </div>
-      <ThemeSelectorButton />
-      <LanguageSelector />
+      <div className="selectors-wrapper">
+        <ThemeSelectorButton />
+        <LanguageSelector />
+      </div>
 
       <HamburgerIcon />
     </HeaderWrapper>

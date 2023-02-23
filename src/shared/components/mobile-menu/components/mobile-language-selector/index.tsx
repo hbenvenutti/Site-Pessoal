@@ -2,7 +2,7 @@ import { BsGlobe2 } from 'react-icons/bs';
 import { useState } from 'react';
 import Flag from 'react-world-flags';
 
-import { LanguageFlag, Languages } from '../../../../@types/enums/languages';
+import { LanguageFlag, Languages } from '../../../../../@types/enums/languages';
 
 import { MobileLanguageSelectorWrapper } from './styles';
 

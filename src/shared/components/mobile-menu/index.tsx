@@ -3,7 +3,8 @@ import { NavLink } from 'react-router-dom';
 import { useMobileMenu } from '../../hooks/mobile-menu-context';
 
 import { MobileMenuWrapper } from './styles';
-import { MobileLanguageSelector } from './mobile-language-selector';
+import { MobileLanguageSelector } from './components/mobile-language-selector';
+import { MobileThemeSelectorButton } from './components/mobile-theme-selector';
 
 import type { ReactElement } from 'react';
 
@@ -16,6 +17,7 @@ export const MobileMenu = (): ReactElement => {
   // *** --- TSX ---------------------------------------------------------------------------- *** //
   return (
     <MobileMenuWrapper>
+      <MobileThemeSelectorButton />
       <MobileLanguageSelector />
       <NavLink
         onClick={closeMobileMenu}

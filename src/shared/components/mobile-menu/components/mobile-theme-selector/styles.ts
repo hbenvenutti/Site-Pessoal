@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 // * ---------------------------------------------------------------------- * //
 
-export const ThemeSelectorButtonWrapper = styled.div`
+export const MobileThemeSelectorButtonWrapper = styled.div`
   display: block;
 
   div.selector {
@@ -34,8 +34,6 @@ export const ThemeSelectorButtonWrapper = styled.div`
 
   input {
     display: block;
-    width: 100%;
-    left: 100px;
     position: absolute;
     visibility: hidden;
   }
@@ -48,11 +46,11 @@ export const ThemeSelectorButtonWrapper = styled.div`
     color: orange;
   }
 
-  #theme-selector:checked + label div.selector {
+  #mobile-theme-selector:checked + label div.selector {
     transform: translateX(1.5625rem);
   }
 
-  #theme-selector:checked + label {
+  #mobile-theme-selector:checked + label {
     background-color: ${props => props.theme['card']};
   }
 `;

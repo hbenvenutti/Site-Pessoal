@@ -49,6 +49,12 @@ export const HeaderWrapper = styled.header`
     align-items: center;
   }
 
+  div.selectors-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
   img.logo {
     width: 5rem;
     height: auto;
@@ -62,6 +68,10 @@ export const HeaderWrapper = styled.header`
       display: none;
       justify-content: space-around;
       gap: 0;
+    }
+
+    div.selectors-wrapper {
+      display: none;
     }
   }
 `;
