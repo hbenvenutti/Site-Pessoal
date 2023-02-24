@@ -11,6 +11,7 @@ export const EducationElementWrapper = styled.div`
   border-bottom: 4px solid ${props => props.theme['secondary02']};
   border-radius: 0 0% 0 16px;
   padding: 2rem 0.5rem;
+  padding-top: 0;
 
   > div {
     display: flex;
@@ -54,9 +55,8 @@ export const EducationElementWrapper = styled.div`
   }
 
   @media (max-width: 900px) {
-    img {
-      width: 100%;
-      height: auto;
+    > div {
+      align-items: flex-start;
     }
   }
 `;

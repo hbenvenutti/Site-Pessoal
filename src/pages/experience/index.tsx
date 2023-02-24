@@ -11,8 +11,6 @@ export const ExperiencePage = (): ReactElement => {
   // *** --- TSX ---------------------------------------------------------------------------- *** //
   return (
     <ExperiencePageWrapper>
-      <h1>Experiência</h1>
-
       {experiences.map(experience => (
         <ExperienceElement
           key={experience.title}

@@ -10,8 +10,6 @@ import type { ReactElement } from 'react';
 function ProjectsPage(): ReactElement {
   return (
     <ProjectsPageWrapper>
-      <h1>Projetos</h1>
-
       <div className="content">
         {projects.map(project => (
           <ProjectElement

@@ -10,7 +10,6 @@ import type { ReactElement } from 'react';
 export const EducationPage = (): ReactElement => {
   return (
     <EducationPageWrapper>
-      <h1>Educação</h1>
       {educationList.map(education => (
         <EducationElement
           key={education.institution}
