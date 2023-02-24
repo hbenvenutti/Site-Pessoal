@@ -35,7 +35,7 @@ function AboutMenu({ onValueChange }: AboutMenuProps): ReactElement {
         onChange={event => handleSelection(event)}
       />
 
-      <label htmlFor="radio-about-me">Sobre mim</label>
+      <label htmlFor="radio-about-me">Sobre</label>
 
       <input
         id="radio-projects"

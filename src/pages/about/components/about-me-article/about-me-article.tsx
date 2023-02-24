@@ -24,7 +24,7 @@ function AboutMeArticle(): ReactElement {
           <p>
             Por gostar muito de Typescript, eu fico de olho no Deno. Poder criar aplicações sem
             precisar transpilar o código é algo que me interessa bastante. Espero que a ferramenta
-            siga crescendo e a comunidade acabe tão forte quando o próprio Node.
+            siga crescendo e a comunidade acabe tão forte quanto o próprio Node.
           </p>
           <p>
             Meu primeiro contato com programação foi na faculdade, lidei com Java, C, Python e

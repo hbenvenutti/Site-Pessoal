@@ -16,10 +16,13 @@ function DemenArticle(): ReactElement {
         instituição ou mesmo professor. Uma pessoa esforçada consegue ter um aprendizado contínuo,
         mas é preciso encontrar diversas fontes para ter um material realmente completo. Por
         exemplo, um determinado site ensina sobre programação orientada a objetos, já outro
-        professor ensina sobre bancos de dados SQL. No demen, o conteúdo estaria estruturado,
-        permitindo que o aluno continue a aprender, sem ir buscar conteúdo fora da plataforma. Nós
-        criamos um plano de ensino, encontramos os materiais nas diferentes fontes e por fim
-        entregamos o conteúdo para o aluno.
+        professor ensina sobre bancos de dados SQL.
+      </p>
+
+      <p>
+        No demen, o conteúdo estaria estruturado, permitindo que o aluno continue a aprender, sem ir
+        buscar conteúdo fora da plataforma. Nós criamos um plano de ensino, encontramos os materiais
+        nas diferentes fontes e por fim entregamos o conteúdo para o aluno.
       </p>
 
       <p>
@@ -28,13 +31,18 @@ function DemenArticle(): ReactElement {
         bolhas de conteúdo. Ao pesquisar sobre um assunto no Youtube, ele apresenta alguns vídeos
         relacionados à palavra chave, e então começa a mostrar vídeos totalmente desalinhados com a
         busca, mas relacionados com conteúdos diversos assistidos anteriormente como futebol ou
-        política. Isso faz com que o aluno se desperse e engaje mais com a plataforma. Isso dá mais
-        dinheiro para o Google, mas torna o Youtube ineficiente para estudo. O Google tem o direito
-        de monetizar as suas plataformas como bem entender, a minha crítica é de que precisamos de
-        uma alternativa focada em educação, já que atualmente o Youtube é o principal mecanismo de
-        busca para vídeo aulas. A tendencia é de que fique cada vez mais dificil encontrar o que se
-        busca, encontrando somente o que o Google quer que vejamos.
+        política.
       </p>
+
+      <p>
+        Esse comportamento faz com que o aluno se desperse e engaje mais com a plataforma. Isso dá
+        mais dinheiro para o Google, mas torna o Youtube ineficiente para estudo. O Google tem o
+        direito de monetizar as suas plataformas como bem entender, a minha crítica é de que
+        precisamos de uma alternativa focada em educação, já que atualmente o Youtube é o principal
+        mecanismo de busca para vídeo aulas. A tendencia é de que fique cada vez mais dificil
+        encontrar o que se busca, encontrando somente o que o Google quer que vejamos.
+      </p>
+
       <p>
         O terceiro problema é que pequenos geradores de conteúdo educacional ficam soterrados por
         vídeos de banheira de nutella e política. A verdade é que educação não da muita view, para o

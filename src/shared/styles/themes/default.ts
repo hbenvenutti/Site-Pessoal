@@ -28,6 +28,8 @@ export const defaultTheme = {
   selector01: '#FFF',
   selector02: '#000',
 
+  articleText: '#000',
+
   // *** --- Theme Icons ------------------------------------------------ *** //
   sun: 'orange',
   moon: '#fef08a'

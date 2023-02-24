@@ -28,6 +28,8 @@ export const darkTheme = {
   selector01: '#FFF',
   selector02: '#000',
 
+  articleText: '#fff',
+
   // *** --- Theme Icons ------------------------------------------------ *** //
   sun: 'orange',
   moon: '#fef08a'

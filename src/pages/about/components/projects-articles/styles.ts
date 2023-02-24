@@ -54,6 +54,10 @@ export const SelectArticleButton = styled.button<ButtonProps>`
     height: 2rem;
     width: 2rem;
   }
+
+  @media (max-width: 1450px) {
+    width: 50%;
+  }
 `;
 
 // -------------------------------------------------------------------------- //

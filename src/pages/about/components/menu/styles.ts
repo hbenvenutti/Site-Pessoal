@@ -20,8 +20,11 @@ export const MenuWrapper = styled.div`
   }
 
   label {
-    flex: 1;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
     padding: 0.5rem 2rem;
     cursor: pointer;
   }
@@ -29,5 +32,14 @@ export const MenuWrapper = styled.div`
   input:checked + label {
     background-color: ${props => props.theme['secondary02']};
     cursor: default;
+  }
+
+  @media (max-width: 1450px) {
+    width: 100%;
+
+    label {
+      font-size: 0.8rem;
+      padding: 0.5rem 0.5rem;
+    }
   }
 `;
