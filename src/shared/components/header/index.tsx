@@ -1,9 +1,8 @@
-import { NavLink } from 'react-router-dom';
-
 import { HeaderWrapper } from './styles';
 import { LanguageSelector } from './components/language-selector';
 import { HamburgerIcon } from './components/hamburger-icon';
 import { ThemeSelectorButton } from './components/theme-selector';
+import { NavLinks } from './components/nav-links';
 
 import type { ReactElement } from 'react';
 
@@ -19,14 +18,11 @@ export const Header = (): ReactElement => {
         </strong>
         <h2>HBenvenutti</h2>
       </div>
+
       <div className="nav-links">
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/about">Sobre</NavLink>
-        <NavLink to="/projects">Projetos</NavLink>
-        <NavLink to="/education">Educação</NavLink>
-        <NavLink to="/experience">Experiência</NavLink>
-        <NavLink to="/certificates">Certificados</NavLink>
+        <NavLinks />
       </div>
+
       <div className="selectors-wrapper">
         <ThemeSelectorButton />
         <LanguageSelector />

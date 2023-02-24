@@ -25,24 +25,8 @@ export const HeaderWrapper = styled.header`
 
   transition: color, background-color 0.5s;
 
-  a {
-    padding: 0.5rem;
-    border-top: 2px solid transparent;
-    border-bottom: 2px solid transparent;
-    transition: all 0.1s;
-  }
-
-  a.active,
-  a:hover {
-    color: ${props => props.theme['strong']};
-    border-bottom: 2px solid ${props => props.theme['secondary02']};
-    transition: all 0.1s;
-  }
-
   div.nav-links {
     display: flex;
-    gap: 0.5rem;
-    align-items: center;
   }
 
   div.logo-wrapper {
@@ -77,8 +61,6 @@ export const HeaderWrapper = styled.header`
 
     div.nav-links {
       display: none;
-      justify-content: space-around;
-      gap: 0;
     }
 
     div.selectors-wrapper {
