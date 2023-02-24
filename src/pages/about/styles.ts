@@ -5,7 +5,9 @@ import styled from 'styled-components';
 export const AboutPageWrapper = styled.main`
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 5rem;
+  margin-top: -2.5rem;
   padding: 0 20rem;
 
   article {
