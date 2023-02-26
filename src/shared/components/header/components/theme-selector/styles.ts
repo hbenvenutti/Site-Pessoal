@@ -23,6 +23,8 @@ export const ThemeSelectorButtonWrapper = styled.div`
     height: 100%;
     align-items: center;
 
+    cursor: pointer;
+
     padding: 0.2rem 0.5rem;
     width: 4rem;
     height: 2rem;
