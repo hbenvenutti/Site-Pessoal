@@ -11,7 +11,9 @@ import type { AboutMenuProps } from '../../../../@types/pages/about-page';
 // * ---------------------------------------------------------------------- * //
 
 function AboutMenu({ onValueChange }: AboutMenuProps): ReactElement {
+  // *** --- Contexts --------------------------------------------------- *** //
   const { t } = useTranslation();
+
   // *** --- Functions -------------------------------------------------- *** //
   function handleSelection(event: ChangeEvent<HTMLInputElement>): void {
     const value = event.target.value as LabelValue;

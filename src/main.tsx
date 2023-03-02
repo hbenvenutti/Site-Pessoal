@@ -7,7 +7,7 @@ import { ThemeButtonProvider } from './shared/hooks/theme';
 
 import './shared/hooks/translation';
 
-// * ------------------------------------------------------------------------------------------ * //
+// * ---------------------------------------------------------------------- * //
 
 createRoot(document.getElementById('root') as HTMLElement).render(
   <StrictMode>
