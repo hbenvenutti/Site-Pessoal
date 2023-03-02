@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { LabelValue } from '../../../../@types/enums/radio-label';
 
@@ -10,6 +11,7 @@ import type { AboutMenuProps } from '../../../../@types/pages/about-page';
 // * ---------------------------------------------------------------------- * //
 
 function AboutMenu({ onValueChange }: AboutMenuProps): ReactElement {
+  const { t } = useTranslation();
   // *** --- Functions -------------------------------------------------- *** //
   function handleSelection(event: ChangeEvent<HTMLInputElement>): void {
     const value = event.target.value as LabelValue;
@@ -35,7 +37,7 @@ function AboutMenu({ onValueChange }: AboutMenuProps): ReactElement {
         onChange={event => handleSelection(event)}
       />
 
-      <label htmlFor="radio-about-me">Sobre</label>
+      <label htmlFor="radio-about-me">{t('about-button-about')}</label>
 
       <input
         id="radio-projects"
@@ -45,7 +47,7 @@ function AboutMenu({ onValueChange }: AboutMenuProps): ReactElement {
         onChange={event => handleSelection(event)}
       />
 
-      <label htmlFor="radio-projects">Projetos</label>
+      <label htmlFor="radio-projects">{t('about-button-projects')}</label>
 
       <input
         id="radio-languages"
@@ -55,7 +57,7 @@ function AboutMenu({ onValueChange }: AboutMenuProps): ReactElement {
         onChange={event => handleSelection(event)}
       />
 
-      <label htmlFor="radio-languages">Idiomas</label>
+      <label htmlFor="radio-languages">{t('about-button-langs')}</label>
 
       <input
         id="radio-tech"
@@ -65,7 +67,7 @@ function AboutMenu({ onValueChange }: AboutMenuProps): ReactElement {
         onChange={event => handleSelection(event)}
       />
 
-      <label htmlFor="radio-tech">Tecnologia</label>
+      <label htmlFor="radio-tech">{t('about-button-techs')}</label>
     </MenuWrapper>
   );
 }

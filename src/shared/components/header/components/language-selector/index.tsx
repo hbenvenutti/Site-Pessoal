@@ -1,24 +1,28 @@
 import { BsGlobe2 } from 'react-icons/bs';
+import { changeLanguage } from 'i18next';
 
-import { Languages } from '../../../../../@types/enums/languages';
+import { supportedLanguages } from '../../../../hooks/translation/supported-languages';
 
 import { LanguageSelectorWrapper } from './styles';
 
+import type { Languages } from '../../../../../@types/enums/languages';
 import type { ReactElement, ChangeEvent } from 'react';
 
-// * ------------------------------------------------------------------------------------------ * //
+// * ---------------------------------------------------------------------- * //
 
-export const LanguageSelector = (): ReactElement => {
-  // *** --- States -------------------------------------------------------------------------- *** //
+function LanguageSelector(): ReactElement {
+  // *** --- States ----------------------------------------------------- *** //
 
-  // *** --- Functions ---------------------------------------------------------------------- *** //
-  const handleLanguageSelection = (_event: ChangeEvent<HTMLSelectElement>): void => {
-    // const language: Languages = event.target.value as Languages;
+  // *** --- Functions -------------------------------------------------- *** //
+  function handleLangSelection(event: ChangeEvent<HTMLSelectElement>): void {
+    const lang: Languages = event.target.value as Languages;
+
+    void changeLanguage(lang);
 
     return;
-  };
+  }
 
-  // *** --- TSX ---------------------------------------------------------------------------- *** //
+  // *** --- TSX -------------------------------------------------------- *** //
   return (
     <LanguageSelectorWrapper>
       <BsGlobe2 />
@@ -26,13 +30,21 @@ export const LanguageSelector = (): ReactElement => {
       <select
         name="languages"
         id="languages"
-        onChange={handleLanguageSelection}
+        onChange={e => handleLangSelection(e)}
       >
-        <option value={Languages.PT_BR}>🇧🇷 Português</option>
-        <option value={Languages.EN}>🇬🇧 English</option>
-        <option value={Languages.ITA}>🇮🇹 Italiano</option>
-        <option value={Languages.DEU}>🇩🇪 Deutsch</option>
+        {supportedLanguages.map(lang => (
+          <option
+            key={lang.code}
+            value={lang.code}
+          >
+            {lang.name}
+          </option>
+        ))}
       </select>
     </LanguageSelectorWrapper>
   );
-};
+}
+
+// * ---------------------------------------------------------------------- * //
+
+export { LanguageSelector };
