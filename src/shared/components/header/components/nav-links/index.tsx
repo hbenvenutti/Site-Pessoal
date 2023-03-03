@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 import { useMobileMenu } from '../../../../hooks/mobile-menu-context';
 
@@ -11,6 +12,7 @@ import type { ReactElement } from 'react';
 function NavLinks(): ReactElement {
   // *** --- Contexts --------------------------------------------------- *** //
   const { closeMobileMenu } = useMobileMenu();
+  const { t } = useTranslation();
 
   // *** --- TSX -------------------------------------------------------- *** //
   return (
@@ -25,31 +27,31 @@ function NavLinks(): ReactElement {
         onClick={closeMobileMenu}
         to="/about"
       >
-        Sobre
+        {t('header.about', { ns: 'common' })}
       </NavLink>
       <NavLink
         onClick={closeMobileMenu}
         to="/projects"
       >
-        Projetos
+        {t('header.projects', { ns: 'common' })}
       </NavLink>
       <NavLink
         onClick={closeMobileMenu}
         to="/education"
       >
-        Educação
+        {t('header.education', { ns: 'common' })}
       </NavLink>
       <NavLink
         onClick={closeMobileMenu}
         to="/experience"
       >
-        Experiência
+        {t('header.experience', { ns: 'common' })}
       </NavLink>
       <NavLink
         onClick={closeMobileMenu}
         to="/certificates"
       >
-        Certificados
+        {t('header.certificates', { ns: 'common' })}
       </NavLink>
     </NavLinksWrapper>
   );
