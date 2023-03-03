@@ -1,12 +1,24 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
-              "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+import type { ReactElement } from 'react';
 
-<svg xmlns="http://www.w3.org/2000/svg"
-     width="16px" height="16px"
-     viewBox="0 0 1500 1500">
-  <path id="Seleção"
-        fill="currentcolor" stroke="currentColor" stroke-width="1"
+// * ---------------------------------------------------------------------- * //
+
+interface DemenLogoProps {
+  width?: string;
+}
+
+function DemenLogo({ width = '1rem' }: DemenLogoProps): ReactElement {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={width}
+      height="auto"
+      viewBox="0 0 1500 1500"
+    >
+      <path
+        id="Seleção"
+        fill="currentcolor"
+        stroke="currentColor"
+        strokeWidth="1"
         d="M 308.00,256.00
            C 308.00,256.00 308.00,289.00 308.00,289.00
              308.00,289.00 351.00,296.57 351.00,296.57
@@ -303,5 +315,12 @@
              1133.82,1235.77 1130.41,1239.59 1128.00,1242.00
              1123.66,1246.34 1113.44,1257.14 1109.00,1260.04
              1109.00,1260.04 1074.00,1277.75 1074.00,1277.75
-             1069.41,1280.05 1062.81,1281.83 1061.00,1287.00 Z" />
-</svg>
+             1069.41,1280.05 1062.81,1281.83 1061.00,1287.00 Z"
+      />
+    </svg>
+  );
+}
+
+// * ---------------------------------------------------------------------- * //
+
+export { DemenLogo };

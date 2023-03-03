@@ -21,6 +21,12 @@ export const ProjectsArticlesWrapper = styled.div`
     padding: 0 10%;
     width: 100%;
   }
+
+  div.title {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
 `;
 
 // -------------------------------------------------------------------------- //
@@ -36,8 +42,7 @@ export const SelectArticleButton = styled.button<ButtonProps>`
   width: 40%;
 
   font-weight: 700;
-  color: ${props =>
-    props.isActive ? props.theme['selector01'] : props.theme['selector02']};
+  color: ${props => props.theme['text']};
 
   background-color: ${props =>
     props.isActive ? props.theme['secondary02'] : props.theme['card']};

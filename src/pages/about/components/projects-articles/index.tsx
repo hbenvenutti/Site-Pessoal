@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { FaYoutube } from 'react-icons/fa';
 
-import DemenLogo from '../../../../assets/demen.svg';
+import { DemenLogo } from '../../../../assets/demen';
 
 import { LeftButton, ProjectsArticlesWrapper, RightButton } from './styles';
 import { DemenArticle } from './demen-article';
@@ -65,10 +65,7 @@ function ProjectsArticles(): ReactElement {
           onClick={onRightButtonClick}
           isActive={isRightButtonActive}
         >
-          <img
-            src={DemenLogo}
-            alt=""
-          />
+          <DemenLogo />
           Demen
         </RightButton>
       </div>
