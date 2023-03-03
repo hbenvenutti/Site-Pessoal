@@ -1,8 +1,9 @@
 import { FaMoon, FaSun } from 'react-icons/fa';
+import { useEffect } from 'react';
 
 import { useThemeButton } from '../../../../hooks/theme';
-import { defaultTheme } from '../../../../styles/themes/default';
 import { darkTheme } from '../../../../styles/themes/dark-theme';
+import { lightTheme } from '../../../../styles/themes/light';
 
 import { ThemeSelectorButtonWrapper } from './styles';
 
@@ -12,18 +13,27 @@ import type { ReactElement } from 'react';
 
 function ThemeSelectorButton(): ReactElement {
   // *** --- Contexts --------------------------------------------------- *** //
-  const { changeTheme } = useThemeButton();
+  const { changeTheme, theme } = useThemeButton();
+
+  // *** --- Vars ------------------------------------------------------- *** //
+  // eslint-disable-next-line prettier/prettier
+  const checkbox = document
+    .getElementById('theme-selector') as HTMLInputElement;
 
   // *** --- Functions -------------------------------------------------- *** //
   function onSelectorClick(): void {
-    const checkbox = document.getElementById('theme-selector') as HTMLInputElement;
-
     if (!checkbox) return;
-    const theme = checkbox.checked ? darkTheme : defaultTheme;
-    // const theme = checkbox.checked ? defaultTheme : darkTheme;
+    const theme = checkbox.checked ? darkTheme : lightTheme;
 
     changeTheme(theme);
   }
+
+  // *** --- Effects ---------------------------------------------------- *** //
+  useEffect(() => {
+    if (theme === lightTheme) return;
+
+    checkbox.checked = true;
+  }, [theme]);
 
   // *** --- TSX -------------------------------------------------------- *** //
   return (

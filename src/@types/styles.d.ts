@@ -1,9 +1,9 @@
 import 'styled-components';
-import type { defaultTheme } from '../shared/styles/themes/default';
+import type { lightTheme } from '../shared/styles/themes/light';
 
 // * ------------------------------------------------------------------------------------------ * //
 
-export type ThemeType = typeof defaultTheme;
+export type ThemeType = typeof lightTheme;
 
 declare module 'styled-components' {
   // eslint-disable-next-line @typescript-eslint/no-empty-interface

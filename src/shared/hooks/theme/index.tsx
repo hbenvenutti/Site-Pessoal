@@ -1,6 +1,7 @@
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useEffect, useState } from 'react';
 
-import { defaultTheme } from '../../styles/themes/default';
+import { darkTheme } from '../../styles/themes/dark-theme';
+import { lightTheme } from '../../styles/themes/light';
 
 import type { ThemeType } from '../../../@types/styles';
 import type { ReactElement } from 'react';
@@ -11,18 +12,30 @@ import type {
 
 // * ---------------------------------------------------------------------- * //
 
-const ThemeButtonContext = createContext<ThemeButtonContextData>({} as ThemeButtonContextData);
+const ThemeButtonContext = createContext<ThemeButtonContextData>(
+  {} as ThemeButtonContextData
+);
 
 // -------------------------------------------------------------------------- //
 
-function ThemeButtonProvider({ children }: ThemeButtonContextProps): ReactElement {
+function ThemeButtonProvider({
+  children
+}: ThemeButtonContextProps): ReactElement {
   // *** --- States ----------------------------------------------------- *** //
-  const [theme, setTheme] = useState<ThemeType>(defaultTheme);
+  const [theme, setTheme] = useState<ThemeType>(lightTheme);
 
   // *** --- Functions -------------------------------------------------- *** //
   const changeTheme = (theme: ThemeType): void => {
     setTheme(theme);
   };
+
+  // *** --- Effects ---------------------------------------------------- *** //
+  useEffect(() => {
+    const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const theme = darkModeQuery.matches ? darkTheme : lightTheme;
+
+    setTheme(theme);
+  }, []);
 
   // *** --- TSX -------------------------------------------------------- *** //
   return (
@@ -34,7 +47,8 @@ function ThemeButtonProvider({ children }: ThemeButtonContextProps): ReactElemen
 
 // -------------------------------------------------------------------------- //
 
-const useThemeButton = (): ThemeButtonContextData => useContext(ThemeButtonContext);
+const useThemeButton = (): ThemeButtonContextData =>
+  useContext(ThemeButtonContext);
 
 // * ---------------------------------------------------------------------- * //
 
