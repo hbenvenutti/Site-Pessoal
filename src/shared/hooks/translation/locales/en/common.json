@@ -1,0 +1,14 @@
+{
+  "header": {
+    "about": "About",
+    "projects": "Portfolio",
+    "education": "Education",
+    "experience": "Experience",
+    "certificates": "Certificates"
+  },
+
+  "aside": {
+    "position": "Full-Stack Developer",
+    "techTitle": "Technology"
+  }
+}

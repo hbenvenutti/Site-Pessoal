@@ -1,0 +1,14 @@
+{
+  "header": {
+    "about": "Zirka",
+    "projects": "Portfólio",
+    "education": "Bildung",
+    "experience": "Berufserfahrung",
+    "certificates": "Zertifikate"
+  },
+
+  "aside": {
+    "position": "Full-Stack Softwareentwickler",
+    "techTitle": "Technologien"
+  }
+}

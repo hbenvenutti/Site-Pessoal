@@ -1,0 +1,14 @@
+{
+  "header": {
+    "about": "Cerca",
+    "projects": "Portafoglio",
+    "education": "Formazione",
+    "experience": "Esperienza",
+    "certificates": "Certificati"
+  },
+
+  "aside": {
+    "position": "Sviluppatore di Software Full-Stack",
+    "techTitle": "Tecnologias"
+  }
+}
