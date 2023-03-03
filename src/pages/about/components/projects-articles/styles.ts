@@ -36,10 +36,11 @@ export const SelectArticleButton = styled.button<ButtonProps>`
   width: 40%;
 
   font-weight: 700;
-  color: ${props => (props.isActive ? props.theme['selector01'] : props.theme['selector02'])};
+  color: ${props =>
+    props.isActive ? props.theme['selector01'] : props.theme['selector02']};
 
   background-color: ${props =>
-    props.isActive ? props.theme['secondary02'] : props.theme['selector01']};
+    props.isActive ? props.theme['secondary02'] : props.theme['card']};
 
   border: 0;
   border-radius: 0;

@@ -39,11 +39,13 @@ function ProjectsArticles(): ReactElement {
         <h2>Planos e Projetos Pessoais</h2>
         <article>
           <p>
-            Eu me sinto muito atraído pela área de educação, acho que quanto mais conteúdo gratuito
-            e de qualidade disponível, melhor. Não sou contra conteúdo pago, mas acho que devem
-            existir alternativas de qualidade criadas pela comunidade para pessoas autodidatas que
-            não tem condição de pagar por uma educação de qualidade. Tenho como inspiração a
-            comunidade de software livre, que cria aplicações de qualidade e disponíveis para todos.
+            Eu me sinto muito atraído pela área de educação, acho que quanto
+            mais conteúdo gratuito e de qualidade disponível, melhor. Não sou
+            contra conteúdo pago, mas acho que devem existir alternativas de
+            qualidade criadas pela comunidade para pessoas autodidatas que não
+            tem condição de pagar por uma educação de qualidade. Tenho como
+            inspiração a comunidade de software livre, que cria aplicações de
+            qualidade e disponíveis para todos.
           </p>
         </article>
       </div>
