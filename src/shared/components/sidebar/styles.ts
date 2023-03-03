@@ -12,7 +12,7 @@ export const SidebarWrapper = styled.aside`
   gap: 1.875rem;
 
   @media (max-width: 1450px) {
-    border-top: 2px solid ${props => props.theme['secondary02']};
+    border-top: 2px solid ${props => props.theme['secondary']};
     padding-top: 3.75rem;
   }
 `;

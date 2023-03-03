@@ -8,8 +8,8 @@ export const darkTheme = {
 
   primary: '#EC4899',
 
-  secondary01: '#EC4899',
   secondary: '#EC4899',
+  secondary02: '#EC4899',
 
   node: '#375A1D',
   cisco: '#4679C8',

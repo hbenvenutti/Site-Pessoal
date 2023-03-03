@@ -17,7 +17,7 @@ export const NavLinksWrapper = styled.div`
   a.active,
   a:hover {
     color: ${props => props.theme['strong']};
-    border-bottom: 2px solid ${props => props.theme['secondary02']};
+    border-bottom: 2px solid ${props => props.theme['secondary']};
     transition: all 0.1s;
   }
 

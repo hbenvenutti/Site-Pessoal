@@ -19,13 +19,13 @@ export const LanguageSelectorWrapper = styled.div`
   svg {
     height: 1.5rem;
     width: 1.5rem;
-    color: ${props => props.theme['secondary02']};
+    color: ${props => props.theme['secondary']};
     transition: all 0.2s;
   }
 
   &:hover {
     svg {
-      color: ${props => props.theme['secondary01']};
+      color: ${props => props.theme['secondary02']};
       transition: all 0.2s;
     }
   }

@@ -11,7 +11,7 @@ export const ProfileCardWrapper = styled(cardBase)`
     width: 8rem;
     height: 8rem;
     border-radius: 100%;
-    border: 2px solid ${props => props.theme['secondary02']};
+    border: 2px solid ${props => props.theme['secondary']};
     outline: solid 1px transparent;
 
     transition: all 0.5s;
@@ -34,8 +34,8 @@ export const ProfileCardWrapper = styled(cardBase)`
 
   &:hover {
     img {
-      box-shadow: 0px 0px 30px 0px ${props => props.theme['secondary02']};
-      outline: ${props => props.theme['secondary02']};
+      box-shadow: 0px 0px 30px 0px ${props => props.theme['secondary']};
+      outline: ${props => props.theme['secondary']};
       transition: all 0.5s;
     }
   }

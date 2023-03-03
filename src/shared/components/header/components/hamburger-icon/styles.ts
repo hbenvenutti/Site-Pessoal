@@ -27,7 +27,7 @@ export const HamburgerIconWrapper = styled.div`
   label span {
     display: block;
     position: absolute;
-    background-color: ${props => props.theme['secondary02']};
+    background-color: ${props => props.theme['secondary']};
     border-radius: 2rem;
     width: 100%;
     height: 5px;

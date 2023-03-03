@@ -30,7 +30,7 @@ export const MenuWrapper = styled.div`
   }
 
   input:checked + label {
-    background-color: ${props => props.theme['secondary02']};
+    background-color: ${props => props.theme['secondary']};
     cursor: default;
   }
 

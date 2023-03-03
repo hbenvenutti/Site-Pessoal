@@ -7,7 +7,7 @@ export const cardBase = styled.div`
   flex-direction: column;
   gap: 1.2rem;
 
-  border: solid 1px ${props => props.theme['secondary02']};
+  border: solid 1px ${props => props.theme['secondary']};
   border-radius: 6px;
   background-color: ${props => props.theme['card']};
   background-clip: padding-box;
@@ -18,13 +18,13 @@ export const cardBase = styled.div`
   transition: all 0.5s;
 
   &:hover {
-    box-shadow: 0px 0px 30px 5px ${props => props.theme['secondary01']};
-    outline: ${props => props.theme['secondary01']};
+    box-shadow: 0px 0px 30px 5px ${props => props.theme['secondary02']};
+    outline: ${props => props.theme['secondary02']};
 
     transition: all 0.5s;
 
     img {
-      box-shadow: 0px 0px 30px 0px ${props => props.theme['primary01']};
+      box-shadow: 0px 0px 30px 0px ${props => props.theme['primary']};
     }
   }
 `;

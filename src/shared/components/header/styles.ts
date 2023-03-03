@@ -19,7 +19,7 @@ export const HeaderWrapper = styled.header`
   padding-right: 10rem;
   padding-left: calc(2.5rem + 2.75rem + 20rem);
 
-  border-bottom: 1px solid ${props => props.theme['secondary02']};
+  border-bottom: 1px solid ${props => props.theme['secondary']};
 
   background-color: ${props => props.theme['background']};
 
@@ -43,7 +43,7 @@ export const HeaderWrapper = styled.header`
 
   span.logo {
     font-size: inherit;
-    color: ${props => props.theme['primary01']};
+    color: ${props => props.theme['primary']};
   }
 
   strong {

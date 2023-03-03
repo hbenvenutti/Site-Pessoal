@@ -20,13 +20,13 @@ export const TechCardWrapper = styled(cardBase)`
   svg {
     width: 2.5rem;
     height: auto;
-    color: ${props => props.theme['secondary02']};
+    color: ${props => props.theme['secondary']};
     transition: color 0.2s;
   }
 
   svg:hover {
     cursor: help;
-    color: ${props => props.theme['secondary01']};
+    color: ${props => props.theme['secondary02']};
     transition: color 0.2s;
   }
 `;

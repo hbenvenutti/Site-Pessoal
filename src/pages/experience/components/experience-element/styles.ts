@@ -5,7 +5,7 @@ export const ExperienceElementWrapper = styled.div`
   flex-direction: column;
   gap: 1rem;
 
-  border-bottom: 4px solid ${props => props.theme['secondary02']};
+  border-bottom: 4px solid ${props => props.theme['secondary']};
 
   border-radius: 0 0% 0 16px;
 
@@ -16,7 +16,7 @@ export const ExperienceElementWrapper = styled.div`
   }
 
   a:hover {
-    color: ${props => props.theme['secondary02']};
+    color: ${props => props.theme['secondary']};
     transition: color 0.2s;
   }
 
@@ -52,7 +52,7 @@ export const ExperienceElementWrapper = styled.div`
     align-items: center;
     padding: 0.75rem;
 
-    background-color: ${props => props.theme['secondary02']};
+    background-color: ${props => props.theme['secondary']};
     border-radius: 100%;
     height: 3rem;
     width: 3rem;

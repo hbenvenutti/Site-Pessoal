@@ -45,7 +45,7 @@ export const SelectArticleButton = styled.button<ButtonProps>`
   color: ${props => props.theme['text']};
 
   background-color: ${props =>
-    props.isActive ? props.theme['secondary02'] : props.theme['card']};
+    props.isActive ? props.theme['secondary'] : props.theme['card']};
 
   border: 0;
   border-radius: 0;

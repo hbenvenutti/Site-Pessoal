@@ -21,12 +21,12 @@ export const LinksCardWrapper = styled(cardBase)`
   }
 
   a:hover {
-    color: ${props => props.theme['secondary02']};
-    border-bottom: solid 2px ${props => props.theme['secondary02']};
+    color: ${props => props.theme['secondary']};
+    border-bottom: solid 2px ${props => props.theme['secondary']};
     transition: all 0.2s;
 
     svg {
-      color: ${props => props.theme['secondary01']};
+      color: ${props => props.theme['secondary02']};
 
       transition: color 0.2s;
     }
@@ -35,7 +35,7 @@ export const LinksCardWrapper = styled(cardBase)`
   svg {
     width: 2rem;
     height: auto;
-    color: ${props => props.theme['secondary02']};
+    color: ${props => props.theme['secondary']};
 
     transition: color 0.2s;
   }
