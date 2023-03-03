@@ -6,11 +6,10 @@ export const defaultTheme = {
   text: '#000',
   strong: '#000',
 
-  primary01: '#EC4899',
-  primary02: '#f472b6',
+  primary: '#3b82f6',
 
-  secondary01: '#1d4ed8',
-  secondary02: '#3b82f6',
+  secondary: '#3b82f6',
+  secondary02: '#1d4ed8',
 
   node: '#375A1D',
   cisco: '#4679C8',

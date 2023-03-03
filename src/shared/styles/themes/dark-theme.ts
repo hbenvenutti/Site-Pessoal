@@ -6,11 +6,10 @@ export const darkTheme = {
   text: '#CFCFCF',
   strong: '#DFDFDF',
 
-  primary01: '#EC4899',
-  primary02: '#f472b6',
+  primary: '#EC4899',
 
-  secondary01: '#1d4ed8',
-  secondary02: '#3b82f6',
+  secondary01: '#EC4899',
+  secondary: '#EC4899',
 
   node: '#375A1D',
   cisco: '#4679C8',
