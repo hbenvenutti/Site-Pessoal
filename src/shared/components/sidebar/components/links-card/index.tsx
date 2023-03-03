@@ -1,5 +1,6 @@
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsGithub } from 'react-icons/bs';
+// eslint-disable-next-line prettier/prettier
 import { FaInstagram, FaLinkedinIn, FaWhatsapp, FaYoutube } from 'react-icons/fa';
 import { SiHackerrank } from 'react-icons/si';
 
@@ -7,7 +8,7 @@ import { LinksCardWrapper } from './styles';
 
 import type { ReactElement } from 'react';
 
-// * ------------------------------------------------------------------------------------------ * //
+// * ---------------------------------------------------------------------- * //
 
 export const LinksCard = (): ReactElement => (
   <LinksCardWrapper>
@@ -55,7 +56,7 @@ export const LinksCard = (): ReactElement => (
       rel="noopener noreferrer"
       title="Hackerrank"
     >
-      <SiHackerrank /> @hbenvenutti
+      <SiHackerrank title="Hackerrank" /> @hbenvenutti
     </a>
 
     <a
