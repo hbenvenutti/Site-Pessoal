@@ -10,7 +10,7 @@ export const MenuWrapper = styled.div`
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
   overflow: hidden;
-  width: 75%;
+  width: 90%;
 
   input {
     display: block;

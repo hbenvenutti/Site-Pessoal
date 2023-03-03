@@ -23,7 +23,9 @@ function AboutMenu({ onValueChange }: AboutMenuProps): ReactElement {
 
   // *** --- Effects ---------------------------------------------------- *** //
   useEffect(() => {
-    const radioButton = document.getElementById('radio-about-me') as HTMLInputElement;
+    // eslint-disable-next-line prettier/prettier
+    const radioButton = document
+      .getElementById('radio-about-me') as HTMLInputElement;
 
     radioButton.checked = true;
   }, []);
@@ -39,7 +41,9 @@ function AboutMenu({ onValueChange }: AboutMenuProps): ReactElement {
         onChange={event => handleSelection(event)}
       />
 
-      <label htmlFor="radio-about-me">{t('about-button-about')}</label>
+      <label htmlFor="radio-about-me">
+        {t('button.about', { ns: 'about' })}
+      </label>
 
       <input
         id="radio-projects"
@@ -49,7 +53,9 @@ function AboutMenu({ onValueChange }: AboutMenuProps): ReactElement {
         onChange={event => handleSelection(event)}
       />
 
-      <label htmlFor="radio-projects">{t('about-button-projects')}</label>
+      <label htmlFor="radio-projects">
+        {t('button.projects', { ns: 'about' })}
+      </label>
 
       <input
         id="radio-languages"
@@ -59,7 +65,9 @@ function AboutMenu({ onValueChange }: AboutMenuProps): ReactElement {
         onChange={event => handleSelection(event)}
       />
 
-      <label htmlFor="radio-languages">{t('about-button-langs')}</label>
+      <label htmlFor="radio-languages">
+        {t('button.langs', { ns: 'about' })}
+      </label>
 
       <input
         id="radio-tech"
@@ -69,7 +77,10 @@ function AboutMenu({ onValueChange }: AboutMenuProps): ReactElement {
         onChange={event => handleSelection(event)}
       />
 
-      <label htmlFor="radio-tech">{t('about-button-techs')}</label>
+      {/* eslint-disable-next-line prettier/prettier */}
+      <label htmlFor="radio-tech">
+        {t('button.techs', { ns: 'about' })}
+      </label>
     </MenuWrapper>
   );
 }
