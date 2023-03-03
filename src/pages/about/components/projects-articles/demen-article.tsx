@@ -12,13 +12,13 @@ function DemenArticle(): ReactElement {
         <h3>Democratizando o ensino (Demen)</h3>
       </div>
       <p>
-        Eu estou desenvolvendo (devagar) uma aplicação para aglomerar conteúdo
-        de qualidade. A ideia é criar um banco de dados com material e vídeo
-        aulas gratuitas já disponíveis na Internet.
+        Eu estou desenvolvendo uma aplicação para aglomerar conteúdo de
+        qualidade. A ideia é criar um banco de dados com material e vídeo aulas
+        gratuitas já disponíveis na Internet.
       </p>
 
       <p>
-        Hoje em dia é possível encontrar aulas sobre qualquer conteúdo, mas
+        Hoje em dia, é possível encontrar aulas sobre qualquer conteúdo, mas
         dificilmente com a mesma instituição ou mesmo professor. Uma pessoa
         esforçada consegue ter um aprendizado contínuo, mas é preciso encontrar
         diversas fontes para ter um material realmente completo. Por exemplo, um
