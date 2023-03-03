@@ -1,5 +1,6 @@
 import { BsGlobe2 } from 'react-icons/bs';
 import { changeLanguage } from 'i18next';
+import { useTranslation } from 'react-i18next';
 
 import { supportedLanguages } from '../../../../hooks/translation/supported-languages';
 
@@ -11,7 +12,11 @@ import type { ReactElement, ChangeEvent } from 'react';
 // * ---------------------------------------------------------------------- * //
 
 function LanguageSelector(): ReactElement {
-  // *** --- States ----------------------------------------------------- *** //
+  // *** --- Contexts --------------------------------------------------- *** //
+  const { i18n } = useTranslation();
+
+  // *** --- Vars ------------------------------------------------------- *** //
+  const { language } = i18n;
 
   // *** --- Functions -------------------------------------------------- *** //
   function handleLangSelection(event: ChangeEvent<HTMLSelectElement>): void {
@@ -30,7 +35,8 @@ function LanguageSelector(): ReactElement {
       <select
         name="languages"
         id="languages"
-        onChange={e => handleLangSelection(e)}
+        defaultValue={language}
+        onChange={handleLangSelection}
       >
         {supportedLanguages.map(lang => (
           <option
