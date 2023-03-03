@@ -6,15 +6,17 @@ import { NavLinks } from './components/nav-links';
 
 import type { ReactElement } from 'react';
 
-// * ------------------------------------------------------------------------------------------ * //
+// * ---------------------------------------------------------------------- * //
 
 export const Header = (): ReactElement => {
-  // *** --- TSX ---------------------------------------------------------------------------- *** //
+  // *** --- TSX -------------------------------------------------------- *** //
   return (
     <HeaderWrapper>
       <div className="logo-wrapper">
         <strong>
-          <span className="logo">{'<'}</span>hb/<span className="logo">{'>'}</span>
+          <span className="logo">{'<'}</span>
+          hb/
+          <span className="logo">{'>'}</span>
         </strong>
         <h2>HBenvenutti</h2>
       </div>
