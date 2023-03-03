@@ -8,13 +8,18 @@ function ChannelArticle(): ReactElement {
       <h3>Canal educativo sobre tecnologia</h3>
 
       <p>
-        Eu pretendo por no ar no futuro próximo um canal educativo ensinando sobre conceitos de
-        programação e sistemas linux.
+        Eu pretendo por no ar no futuro próximo um canal educativo ensinando
+        sobre conceitos de programação e sistemas linux.
       </p>
 
       <p>
-        Exemplo de conteúdo: personalizar terminal, instalar IDE, configurar Linux, formatar
-        mensagem de commit. Também pretendo criar video aulas sobre Deno.
+        Já estou preparando um vídeo sobre como formatar as mensagens de commit
+        usando husky e commitlint. Quando o vídeo estiver no ar eu vou
+        adicioná-lo aqui ao site.
+      </p>
+      <p>
+        Pretendo fazer vídeo aulas sobre Deno, sobre bibliotecas, instalação e
+        talvez até criando uma aplicação CRUD.
       </p>
     </article>
   );
