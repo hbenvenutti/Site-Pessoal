@@ -39,7 +39,8 @@ export const MenuWrapper = styled.div`
 
     label {
       font-size: 0.8rem;
-      padding: 0.5rem 0.5rem;
+      font-weight: bold;
+      padding: 0.8rem 0rem;
     }
   }
 `;
