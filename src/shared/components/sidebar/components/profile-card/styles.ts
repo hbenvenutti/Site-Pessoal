@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { cardBase } from '../styles/card-base';
 
-// * ------------------------------------------------------------------------------------------ * //
+// * ---------------------------------------------------------------------- * //
 
 export const ProfileCardWrapper = styled(cardBase)`
   align-items: center;
@@ -12,8 +12,9 @@ export const ProfileCardWrapper = styled(cardBase)`
     height: 8rem;
     border-radius: 100%;
     border: 2px solid ${props => props.theme['secondary02']};
+    outline: solid 1px transparent;
 
-    transition: box-shadow 0.1s;
+    transition: all 0.5s;
   }
 
   .name-wrapper {
@@ -34,9 +35,8 @@ export const ProfileCardWrapper = styled(cardBase)`
   &:hover {
     img {
       box-shadow: 0px 0px 30px 0px ${props => props.theme['secondary02']};
-      outline: solid 1px ${props => props.theme['secondary02']};
+      outline: ${props => props.theme['secondary02']};
+      transition: all 0.5s;
     }
-
-    transition: box-shadow 0.1s;
   }
 `;

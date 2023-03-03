@@ -13,13 +13,15 @@ export const cardBase = styled.div`
   background-clip: padding-box;
   padding: 25px;
 
-  transition: box-shadow 0.1s;
+  outline: solid 1px transparent;
+
+  transition: all 0.5s;
 
   &:hover {
     box-shadow: 0px 0px 30px 5px ${props => props.theme['secondary01']};
-    outline: solid 1px ${props => props.theme['secondary01']};
+    outline: ${props => props.theme['secondary01']};
 
-    transition: box-shadow 0.1s;
+    transition: all 0.5s;
 
     img {
       box-shadow: 0px 0px 30px 0px ${props => props.theme['primary01']};
