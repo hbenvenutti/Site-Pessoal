@@ -26,6 +26,17 @@ export const AboutPageWrapper = styled.main`
     gap: 2rem;
   }
 
+  h1 {
+    display: flex;
+    align-items: center;
+  }
+
+  span.title-tag {
+    color: ${props => props.theme['primary']};
+    font-size: 2rem;
+    /* font-weight: 700; */
+  }
+
   p {
     color: ${props => props.theme['articleText']};
     text-indent: 50px;

@@ -6,35 +6,41 @@ function AboutMeArticle(): ReactElement {
   return (
     <>
       <div className="chapter">
-        <h1>Sobre mim</h1>
+        <h1>
+          <span className="title-tag">{'<'}</span>
+          Sobre mim
+          <span className="title-tag">{'>'}</span>
+        </h1>
         <article>
           <p>
-            Me chamo Huam Benvenutti, sou um desenvolvedor full stack. Curso
+            Me chamo Huam Benvenutti, sou um desenvolvedor full-stack. Curso
             Análise e desenvolvimento de sistemas no Instituto Federal do Rio
             Grande do Sul (IFRS). Sou apaixonado por tecnologia e estou sempre
             atento às notícias relacionadas ao campo.
           </p>
 
           <p>
-            Minha especialidade é Typescript. Dei prioridade ao Javascript por
-            ser uma linguagem coringa, que pode-se fazer de tudo e mais um
-            pouco. Na minha opinião o Typescript agrega muito ao Javascript,
-            gosto de tipar as variáveis e saber exatamente o que se envia e
-            recebe entre as funções. Sem falar que a IDE (VSCode) ganha super
-            poderes ao utilizar-se tipagem.
+            Minha especialidade é <strong>Typescript</strong>. Dei prioridade ao
+            Javascript por ser uma linguagem coringa, que pode-se fazer de tudo
+            e mais um pouco. Na minha opinião o Typescript agrega muito ao
+            Javascript, gosto de tipar as variáveis e saber exatamente o que se
+            envia e recebe entre as funções. Sem falar que a IDE (VSCode) ganha
+            super poderes ao utilizar-se tipagem.
           </p>
           <p>
-            Por gostar muito de Typescript, eu fico de olho no Deno. Poder criar
-            aplicações sem precisar transpilar o código, é algo que me interessa
-            bastante. Espero que a ferramenta siga crescendo e a comunidade
-            acabe tão forte quanto o próprio Node.
+            Por gostar muito de Typescript, eu fico de olho no
+            <strong> Deno</strong>. Poder criar aplicações sem precisar
+            transpilar o código, é algo que me interessa bastante. Espero que a
+            ferramenta siga crescendo e a comunidade acabe tão forte quanto o
+            próprio Node.
           </p>
           <p>
             Meu primeiro contato com programação foi na faculdade, lidei com
-            Java, C, Python e Javascript. Contudo, os conhecimentos avançados,
-            eu adquiri com a Rocketseat. Comprei o curso deles anos atrás. E por
-            ser um dos primeiros, tenho acesso vitalício a todas as atualizações
-            de conteúdo.
+            <strong> Java</strong>, <strong>C</strong>, <strong>Python </strong>
+            e<strong> Javascript</strong>. Contudo, os conhecimentos avançados,
+            eu adquiri com a<strong> Rocketseat</strong>. Comprei o curso deles
+            anos atrás. E por ser um dos primeiros, tenho acesso vitalício a
+            todas as atualizações de conteúdo do curso.
           </p>
         </article>
       </div>
@@ -51,12 +57,17 @@ function AboutMeArticle(): ReactElement {
           </p>
           <p>
             Quando a pandemia começou, acabei trancando a minha matrícula e
-            acabei não voltando para a faculdade. Após um ano sem estudar,
-            tentei me transferir novamente, dessa vez para Porto Alegre/RS,
+            acabei não voltando para a faculdade. Nesse hiato, eu estudei por
+            conta própria e também fiz cursos da <strong> Rocketseat</strong>.
+            Nunca deixei de aprimorar os meus conhecimentos
+          </p>
+          <p>
+            Tentei me transferir novamente, dessa vez para Porto Alegre/RS,
             minha cidade natal. Não consegui a transferência e tive que prestar
-            vestibular. Resultado, passei em primeiro lugar e estou cursando
-            desde então análise e desenvolvimento de sistemas no Instituto
-            Federal do Rio Grande do Sul no câmpus restinga.
+            vestibular. Resultado, passei em <strong>primeiro lugar</strong> e
+            estou cursando desde então análise e desenvolvimento de sistemas no
+            <strong> Instituto Federal do Rio Grande do Sul</strong> no câmpus
+            restinga.
           </p>
         </article>
       </div>
