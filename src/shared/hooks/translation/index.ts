@@ -9,15 +9,14 @@ import { resources } from './resources';
 
 const detectionOptions = {
   order: [
-    'querystring', 
-    'cookie', 
-    'localStorage', 
+    // 'localStorage', 
     'sessionStorage', 
-    'navigator', 
-    'htmlTag', 
-    'path', 
-    'subdomain'
-  ]
+    'navigator',
+    // 'htmlTag', 
+    // 'path', 
+    // 'subdomain'
+  ],
+  caches: ['sessionStorage']
 }
 
 // -------------------------------------------------------------------------- //
@@ -32,7 +31,6 @@ export default use(initReactI18next)
       escapeValue: false
     },
     detection: detectionOptions,
-    cache: ['cookies']
   })
 
 // * ---------------------------------------------------------------------- * //
