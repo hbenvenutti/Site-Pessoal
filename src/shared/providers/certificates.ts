@@ -3,6 +3,7 @@ import igniteImg from '../../assets/certificates/node.png';
 import ccnaImg from '../../assets/certificates/ccna.png';
 import efsetImg from '../../assets/certificates/efset.png';
 import sololearnImg from '../../assets/certificates/sololearn.png';
+import extensionImg from '../../assets/certificates/extension.png';
 
 import type { Certificates } from '../../@types/providers/certificates';
 
@@ -19,6 +20,16 @@ export const certificates: Certificates = [
     validationLink:
       'https://app.rocketseat.com.br/certificates/1dd4a0fe-9cab-4588-833d-ea5ef79188b2',
     spanColor: CertificateSpanColor.NODE
+  },
+  {
+    institution: 'Instituto Federal - Rio Grande do Sul',
+    institutionSite: 'https://ifrs.edu.br/viamao/',
+    image: extensionImg,
+    name: 'Monitor voluntário no curso de Informática Básica',
+    result: 'Concluído',
+    date: new Date('03/23/2023'),
+    validationLink: 'https://sgce.ifrs.edu.br/validar/E370401F',
+    spanColor: CertificateSpanColor.IFRS
   },
   {
     institution: 'EF Set',

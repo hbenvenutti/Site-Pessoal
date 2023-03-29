@@ -15,6 +15,7 @@ export const lightTheme = {
   cisco: '#4679C8',
   efset: '#605FEA',
   sololearn: '#F35843',
+  ifrs: '#359846',
 
   experience_svg: '#FFF',
   education_svg: '#FFF',
